@@ -5,33 +5,33 @@ const LoyalpassStory: React.FC = () => {
   const values = [
     {
       icon: Award,
-      title: "Proven Expertise",
-      description: "A decade of EB-5 expertise — your path to U.S. investment immigration"
+      title: "Chuyên môn đã được chứng minh",
+      description: "Với 10 năm nghiệm về EB-5 - Loyalpass là bạn đồng hành tin cậy của hơn 500 gia đình trên hành trình tới Hoa Kỳ"
     },
     {
       icon: Target,
-      title: "Proactive Guidance",
-      description: "We monitor changes closely and guide you every step of the way"
+      title: "Hướng dẫn chuyên nghiệp và chủ động",
+      description: "Luôn theo dõi sát sao mọi thay đổi và hướng dẫn khách hàng từng bước của quy trình nhập cư."
     },
     {
       icon: Heart,
-      title: "Client-First Focus",
-      description: "Your benefits come first — we prioritize your interests"
+      title: "Quyền lợi của khách hàng là ưu tiên của chúng tôi",
+      description: "Chúng tôi đặt quyền lợi của khách hàng là kim chỉ nam trong mọi quyết định"
     },
     {
       icon: Users,
-      title: "Respectful Support",
-      description: "We respect your immigration story and diligently support it"
+      title: "Hỗ trợ tận tâm",
+      description: "Loyalpass: Người bạn đồng hành tin cậy trên hành trình nhập cư, luôn tôn trọng câu chuyện của khách hàng và hỗ trợ tận tâm để khách hàng đạt được thành công"
     },
     {
       icon: CheckCircle,
-      title: "Credible Track Record",
-      description: "Trusted by 500+ EB-5 investors"
+      title: "Thành tích đáng tin cậy",
+      description: "Đối tác đáng tin cậy của hơn 500 nhà đầu tư EB-5 trên con đường nhập cư Hoa Kỳ"
     },
     {
       icon: Eye,
-      title: "Transparency",
-      description: "We honor honesty and transparency to our clients"
+      title: "Minh bạch",
+      description: "Chúng tôi đề cao sự trung thực và minh bạch, giúp khách hàng nắm rõ mọi thông tin và chủ động trong quá trình định cư"
     }
   ];
 
@@ -41,23 +41,18 @@ const LoyalpassStory: React.FC = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              The Loyalpass Story
+              Câu chuyện Loyalpass
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              For over a decade, Loyalpass has been more than just an EB-5 advisory firm. 
-              We've been trusted partners in the most important journey of our clients' lives — 
-              their path to American residency.
+              Mười năm kinh nghiệm, Loyalpass không chỉ là một công ty tư vấn EB-5. Chúng tôi đã trở thành đối tác đáng tin cậy trong hành trình quan trọng, kiến tạo con đường định cư thành công cho khách hàng - con đường đến thường trú nhân và công dân Hoa Kỳ.
             </p>
             <p className="text-lg text-gray-600 mb-8">
-              Built on the foundation of <strong>"where there's a will there's a way,"</strong> we've 
-              navigated complex immigration landscapes, celebrated countless success stories, and 
-              stood by our clients through every challenge and triumph.
+              Được xây dựng trên nền tảng "where there's a will, there's a way", chúng tôi đã vượt qua những thách thức phức tạp của luật nhập cư, vui mừng với vô số câu chuyện thành công, sát cánh cùng khách hàng qua mọi thử thách trong quá trình thực hiện hồ sơ.
             </p>
             <div className="bg-blue-600 text-white p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-2">Our Mission</h3>
+              <h3 className="text-2xl font-bold mb-2">Sứ mệnh của chúng tôi</h3>
               <p className="text-lg">
-                To provide expert guidance, unwavering support, and transparent service that 
-                transforms immigration dreams into American realities.
+                Cung cấp hướng dẫn chuyên môn, hỗ trợ vững chắc và dịch vụ minh bạch để biến những giấc mơ nhập cư thành hiện thực.
               </p>
             </div>
           </div>
