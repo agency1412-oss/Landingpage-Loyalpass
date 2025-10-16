@@ -8,7 +8,7 @@ const Testimonials: React.FC = () => {
       location: "Chấp thuận I-526E ngày 19/9/2025",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Loyalpass made our EB-5 journey seamless. Their expertise in project selection was invaluable, and their team guided us through every complexity with patience and professionalism. We received our green cards exactly as promised.",
+      text: "Bắt tay với gia đình chúng tôi từ tháng 11/2024, chỉ trong vòng 4 tháng  với một phong cách làm việc chuyên nghiệp, cẩn thận, kiên trì và phối hợp nhiệt tình của đội ngũ Loyalpass đã giúp cho gia đình tôi chuẩn bị được một bộ hồ sơ hoàn thiện có rất nhiều chi tiết trong đó có những phần tưởng khó mà thực hiện để chúng tôi được USCIS xác nhận hồ sơ vào ngày 05/03/2025. Chính nhờ sự chuẩn bị khoa học, hợp lý, chặt chẽ nên bộ hồ sơ của chúng tôi đã được USCIS chấp thuận chỉ trong một thời gian ngắn 6.5 tháng vào ngày 19/09/2025.",
       project: "Regional Center Project",
       year: "2023"
     },
@@ -17,7 +17,7 @@ const Testimonials: React.FC = () => {
       location: "Chấp thuận I-526E ngày 21/01/2025",
       image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "The transparency and communication from Loyalpass exceeded all expectations. They were always available for questions and provided detailed updates throughout the process. Worth every penny for peace of mind.",
+      text: "Là khách hàng của Cty Loyalpass gia đình chúng tôi  gồm năm thành viên từ tháng 02/2024 được sự hướng dẫn của quí Công ty Loyalpass , chúng tôi đã hoàn tất việc nộp hồ sơ và đến 20/01/2025 chúng tôi nhận được thư chấp thuận của USCIS . Thật sự đó là một thành công và tin vui cho sự hợp tác thật hiệu quả của Quí Công ty.",
       project: "TEA Investment",
       year: "2022"
     },
@@ -26,7 +26,7 @@ const Testimonials: React.FC = () => {
       location: "Chấp thuận I-526E ngày 06/08/2025",
       image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "After a disappointing experience with another firm, Loyalpass rescued our case. Their attention to detail and proactive approach turned our denied petition into an approval. Truly grateful for their dedication.",
+      text: "Nhờ sự tư vấn rõ ràng, nhanh chóng phản hồi , sự chuyên nghiệp và tận tuỵ của đội ngủ công ty đã giúp cho hồ sơ của bạn du học sinh nhận thẻ xanh trong khoảng thời gian nhanh nhất. Chân thành cám ơn các bạn.",
       project: "Direct Investment",
       year: "2024"
     },
@@ -35,7 +35,7 @@ const Testimonials: React.FC = () => {
       location: "Được cấp Thẻ Xanh tháng 8/2025",
       image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "As a busy professional, I needed experts I could trust completely. Loyalpass delivered exceptional service while I focused on my career. Their knowledge of the medical field EB-5 applications was impressive.",
+      text: "Là một du học sinh đang học tại Mỹ, ban đầu em và ba mẹ cũng khá lo lắng, bỡ ngỡ vì không biết bắt đầu từ đâu. Nhưng nhờ sự hướng dẫn tận tình, rõ ràng và rất chuyên nghiệp từ Loyalpass mọi thứ trở nên nhẹ nhàng và suôn sẻ hơn rất nhiều. Đặc biệt, việc nhận được thẻ xanh có điều kiện (2 năm) chỉ sau 6 tháng thật sự là một kết quả ngoài mong đợi đối với cả gia đình em.",
       project: "Rural TEA Project",
       year: "2023"
     }
