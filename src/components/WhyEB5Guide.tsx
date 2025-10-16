@@ -7,10 +7,10 @@ const WhyEB5Guide: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            What Makes EB-5 Different & Why You Need the Right Guide
+            EB-5 Rất Khác Biệt & bạn cần những hướng dẫn chính xác
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            EB-5 is unlike any other immigration program, with unique complexities that require expert navigation.
+            Chương trình EB-5 không giống bất kỳ chương trình nhập cư nào khác, với những phức tạp đặc thù đòi hỏi sự hướng dẫn của chuyên gia.
           </p>
         </div>
 
@@ -18,12 +18,10 @@ const WhyEB5Guide: React.FC = () => {
           <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
             <TrendingUp className="h-12 w-12 text-blue-600 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Project Valuation & Selection
+              Đầu tư EB-5 yêu cầu chịu sự rủi ro
             </h3>
             <p className="text-gray-600 mb-6">
-              Not all EB-5 projects are created equal. Our rigorous due diligence process 
-              evaluates financial stability, job creation potential, and compliance history 
-              to protect your investment and immigration goals.
+              USCIS yêu cầu khoản đầu tư của bạn cần chịu sự rủi ro, việc đánh giá các rủi ro tiềm ẩn và các biện pháp giảm thiểu rủi ro giúp khoản đầu tư của bạn được an toàn. Đồng hành cùng hơn 500 nhà đầu tư EB-5 Việt Nam, chúng tôi có bộ tiêu chuẩn đánh giá một dự án EB-5 an toàn, giúp bảo vệ vốn đầu tư của bạn.
             </p>
             <ul className="space-y-2 text-gray-700">
               <li>• Financial analysis & risk assessment</li>
