@@ -5,7 +5,7 @@ const Benefits: React.FC = () => {
   const benefits = [
     {
       icon: Zap,
-      title: "Fast-Track to U.S. Residency",
+      title: "EB-5 - Con đường nhanh nhất để định cư",
       description: "Bypass traditional immigration queues with direct path to permanent residency through strategic investment.",
       features: ["Permanent resident status", "No sponsor required", "Direct application process"]
     },
