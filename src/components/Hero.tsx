@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg flex items-center justify-center">
-                Start Your EB-5 Journey
+                Bắt đầu hành trình EB-5 của bạn
                 <ArrowRight className="h-5 w-5 ml-2" />
               </button>
               <button className="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold text-lg">
@@ -35,11 +35,11 @@ const Hero: React.FC = () => {
             <div className="flex items-center space-x-8">
               <div className="flex items-center">
                 <Shield className="h-6 w-6 text-green-600 mr-2" />
-                <span className="text-gray-600">Proven Track Record</span>
+                <span className="text-gray-600">Thành tích đã được chứng minh</span>
               </div>
               <div className="flex items-center">
                 <Award className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-gray-600">500+ Successful Cases</span>
+                <span className="text-gray-600">Hơn 500 hồ sơ thành công</span>
               </div>
             </div>
           </div>
