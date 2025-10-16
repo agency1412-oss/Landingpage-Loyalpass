@@ -6,7 +6,6 @@ import LoyalpassStory from './components/LoyalpassStory';
 import WhyEB5Guide from './components/WhyEB5Guide';
 import InvestorSteps from './components/InvestorSteps';
 import HowWePrepare from './components/HowWePrepare';
-import WhyLoyalpass from './components/WhyLoyalpass';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
@@ -20,7 +19,6 @@ function App() {
       <WhyEB5Guide />
       <InvestorSteps />
       <HowWePrepare />
-      <WhyLoyalpass />
       <Testimonials />
       <Footer />
     </div>
