@@ -5,51 +5,51 @@ const InvestorSteps: React.FC = () => {
   const steps = [
     {
       step: "01",
-      title: "Initial Consultation",
-      description: "Free consultation to assess your eligibility and discuss your immigration goals.",
-      timeline: "Day 1"
+      title: "Tư vấn ban đầu",
+      description: "Tư vấn miễn phí để đánh giá đủ điều kiện và thảo luận về mục tiêu nhập cư của bạn.",
+      timeline: "Ngày 1"
     },
     {
       step: "02", 
-      title: "Source of Funds Documentation",
-      description: "Gather and prepare comprehensive documentation proving the lawful source of your investment capital.",
-      timeline: "Weeks 1-4"
+      title: "Hồ sơ chứng minh nguồn gốc vốn",
+      description: "Thu thập và chuẩn bị tài liệu toàn diện chứng minh nguồn gốc hợp pháp của vốn đầu tư.",
+      timeline: "Tuần 1-4"
     },
     {
       step: "03",
-      title: "Project Selection",
-      description: "Choose from our vetted portfolio of qualifying EB-5 projects based on your risk tolerance and preferences.",
-      timeline: "Weeks 2-6"
+      title: "Lựa chọn dự án và đăng ký suất",
+      description: "Chọn từ danh mục các dự án EB-5 đã được chúng tôi thẩm định kỹ lưỡng, ưu tiên an toàn Thẻ Xanh và bảo toàn vốn đầu tư.",
+      timeline: "Tuần 2-6"
     },
     {
       step: "04",
-      title: "Investment & Subscription",
-      description: "Complete investment documentation and transfer funds to the chosen project's escrow account.",
-      timeline: "Weeks 6-8"
+      title: "Đầu tư",
+      description: "Hoàn thành ký hồ sơ dự án và chuyển tiền vào tài khoản ký quỹ của dự án đã chọn.",
+      timeline: "Tuần 6-8"
     },
     {
       step: "05",
-      title: "I-526E Petition Preparation",
-      description: "Comprehensive preparation and filing of your I-526E immigrant investor petition with USCIS.",
-      timeline: "Weeks 8-12"
+      title: "Nộp đơn I-526E",
+      description: "Hoàn thiện hồ sơ, Nộp đơn I-526E vào Sở Di trú và Nhập tịch Hoa Kỳ (USCIS).",
+      timeline: "Tuần 8-10"
     },
     {
       step: "06",
-      title: "USCIS Review & Approval",
-      description: "USCIS reviews your petition. Upon approval, move to consular processing or adjustment of status.",
-      timeline: "12-18 months"
+      title: "Chấp thuận đơn I-526E",
+      description: "USCIS xem xét và phê duyệt đơn I-526E của bạn. Thời gian phê duyệt ưu tiên dành cho dự án Rural.",
+      timeline: "6-12 tháng"
     },
     {
       step: "07",
-      title: "Conditional Green Card",
-      description: "Receive conditional permanent resident status valid for two years.",
-      timeline: "Month 18-24"
+      title: "Phỏng vấn và Thẻ xanh có điều kiện",
+      description: "Hồ sơ được chuyển qua NVC và lên lịch phỏng vấn tại Lãnh Sự Quán. Nhận thẻ xanh có điều kiện có hiệu lực trong hai năm.",
+      timeline: "Tháng 18-24"
     },
     {
       step: "08",
-      title: "I-829 Removal of Conditions",
-      description: "File I-829 petition to remove conditions and obtain permanent green card status.",
-      timeline: "Month 22-24"
+      title: "Nộp đơn I-829- Xoá bỏ điều kiện",
+      description: "Nộp đơn I-829 để xóa các điều kiện và nhận thẻ xanh vĩnh viễn.",
+      timeline: "Tháng 21-24"
     }
   ];
 
@@ -58,11 +58,10 @@ const InvestorSteps: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Your EB-5 Journey: Step by Step
+            Quy trình thực hiện hồ sơ EB-5
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our proven process ensures every detail is handled correctly, from initial consultation 
-            to permanent green card approval.
+            Quy trình đã được chứng minh của chúng tôi đảm bảo mọi chi tiết đều được xử lý đúng cách, từ tư vấn ban đầu đến khi thẻ xanh vĩnh viễn được chấp thuận.
           </p>
         </div>
 
