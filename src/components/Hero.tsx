@@ -19,8 +19,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Don't miss the RIA grandfathering deadline. With a decade of EB-5 expertise, 
-              we've guided 500+ investors to success. Let us secure your American dream before it's too late.
+              An tâm đầu tư EB-5 trước khi Luật Bất Hồi Tố hết hiệu lực. Với 10 năm kinh nghiệm và 500+ nhà đầu tư thành công, chúng tôi hiểu rõ cách bảo vệ quyền lợi của bạn. Hãy để chúng tôi giúp bạn định cư Hoa Kỳ một cách nhanh chóng và hiệu quả. 
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
