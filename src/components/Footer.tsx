@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           <div>
             <img src="/loyalpass-02.png" alt="Loyalpass" className="h-12 w-auto mb-6" />
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -27,16 +27,6 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold mb-6">Services</h4>
-            <ul className="space-y-3 text-gray-300">
-              <li><a href="#" className="hover:text-white transition-colors">EB-5 Consultation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Project Selection</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">I-526E Preparation</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">I-829 Support</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Investment Recovery</a></li>
-            </ul>
-          </div>
 
 
           <div>
