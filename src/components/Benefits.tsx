@@ -5,21 +5,21 @@ const Benefits: React.FC = () => {
   const benefits = [
     {
       icon: Zap,
-      title: "Fast-Track to U.S. Residency",
-      description: "Bypass traditional immigration queues with direct path to permanent residency through strategic investment.",
-      features: ["Permanent resident status", "No sponsor required", "Direct application process"]
+      title: "EB-5 - Con đường nhanh nhất để định cư",
+      description: "Bỏ qua các hàng chờ di trú truyền thống, trở thành thường trú nhân bằng con đường trực tiếp thông qua việc đầu tư chiến lược.",
+      features: ["Không yêu cầu người bảo lãnh", "Thẻ xanh nhanh chóng chỉ từ 6-24 tháng"]
     },
     {
       icon: Users,
-      title: "Inclusive Family Benefits",
-      description: "Secure residency not just for yourself, but for your entire family including spouse and unmarried children under 21.",
-      features: ["Spouse inclusion", "Children under 21", "Path to citizenship"]
+      title: "Lợi ích cho cả gia đình",
+      description: "Thẻ xanh cho cả gia đình bao gồm vợ chồng và các con dưới 21 tuổi còn độc thân.",
+      features: ["Trờ thành công dân Hoa Kỳ sau 5 năm nhập cư"]
     },
     {
       icon: Trending,
-      title: "Boundless Opportunities",
-      description: "Access world-class education, healthcare, business opportunities, and the freedom to live anywhere in the United States.",
-      features: ["Educational access", "Healthcare benefits", "Business freedom"]
+      title: "Cơ hội vượt trội",
+      description: "Tiếp cận nền giáo dục, y tế đẳng cấp thế giới",
+      features: ["Ưu đãi học phí dành riêng cho thường trú nhân Hoa Kỳ", "Mở ra các cơ hội kinh doanh và tự do sống ở bất cứ "]
     }
   ];
 
@@ -28,11 +28,11 @@ const Benefits: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Why EB-5 is Your Gateway to the American Dream
+            EB-5 Cánh cửa tới Hoa Kỳ một cách nhanh chóng và hiệu quả
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The EB-5 program offers unparalleled advantages for investors seeking U.S. residency. 
-            With the 2026 deadline approaching, now is the time to act.
+            Chương trình EB-5 mang lại những lợi thế vượt trội cho các nhà đầu tư đang tìm kiếm thẻ thường trú nhân. 
+            Với hạn chót năm 2026 đang đến gần, đây là thời điểm để thực hiện.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ const Benefits: React.FC = () => {
               </ul>
               
               <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                Learn More →
+                Tìm hiểu thêm →
               </button>
             </div>
           ))}
