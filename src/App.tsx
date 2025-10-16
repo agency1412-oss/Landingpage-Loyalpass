@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import LoyalpassStory from './components/LoyalpassStory';
 import WhyEB5Guide from './components/WhyEB5Guide';
-import ReadyToBegin from './components/ReadyToBegin';
 import InvestorSteps from './components/InvestorSteps';
 import HowWePrepare from './components/HowWePrepare';
 import WhyLoyalpass from './components/WhyLoyalpass';
@@ -19,7 +18,6 @@ function App() {
       <Benefits />
       <LoyalpassStory />
       <WhyEB5Guide />
-      <ReadyToBegin />
       <InvestorSteps />
       <HowWePrepare />
       <WhyLoyalpass />
