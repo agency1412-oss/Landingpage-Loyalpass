@@ -3,8 +3,9 @@ import { ArrowRight, Clock, Shield, Award } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-indigo-100 pt-24 pb-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-cover bg-center bg-no-repeat pt-24 pb-16" style={{ backgroundImage: "url('/img5.jpg')" }}>
+      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -12,14 +13,14 @@ const Hero: React.FC = () => {
               Nộp hồ sơ để được bảo vệ quyền lợi toàn diện trước: 30 tháng 9, 2026
             </div>
             
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Xây dựng tương lai vững chắc 
-              <span className="text-blue-600"> tại Hoa Kỳ</span>
+            <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Xây dựng tương lai vững chắc
+              <span className="text-blue-400"> tại Hoa Kỳ</span>
               <br />Bắt đầu với chúng tôi
             </h1>
             
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              An tâm đầu tư EB-5 trước khi Luật Bất Hồi Tố hết hiệu lực. Với 10 năm kinh nghiệm và 500+ nhà đầu tư thành công, chúng tôi hiểu rõ cách bảo vệ quyền lợi của bạn. Hãy để chúng tôi giúp bạn định cư Hoa Kỳ một cách nhanh chóng và hiệu quả. 
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
+              An tâm đầu tư EB-5 trước khi Luật Bất Hồi Tố hết hiệu lực. Với 10 năm kinh nghiệm và 500+ nhà đầu tư thành công, chúng tôi hiểu rõ cách bảo vệ quyền lợi của bạn. Hãy để chúng tôi giúp bạn định cư Hoa Kỳ một cách nhanh chóng và hiệu quả.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -31,12 +32,12 @@ const Hero: React.FC = () => {
             
             <div className="flex items-center space-x-8">
               <div className="flex items-center">
-                <Shield className="h-6 w-6 text-green-600 mr-2" />
-                <span className="text-gray-600">Thành tích đã được chứng minh</span>
+                <Shield className="h-6 w-6 text-green-400 mr-2" />
+                <span className="text-gray-100">Thành tích đã được chứng minh</span>
               </div>
               <div className="flex items-center">
-                <Award className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-gray-600">Hơn 500 hồ sơ thành công</span>
+                <Award className="h-6 w-6 text-blue-400 mr-2" />
+                <span className="text-gray-100">Hơn 500 hồ sơ thành công</span>
               </div>
             </div>
           </div>
