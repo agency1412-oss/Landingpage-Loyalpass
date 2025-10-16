@@ -9,22 +9,23 @@ const Hero: React.FC = () => {
           <div>
             <div className="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Clock className="h-4 w-4 mr-2" />
-              Nộp hồ sơ để được bảo vệ quyền lợi toàn diện trước: 30 tháng 9, 2026
+              Critical Deadline: September 30, 2026
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Xây dựng tương lai vững chắc 
-              <span className="text-blue-600"> tại Hoa Kỳ</span>
-              <br />Bắt đầu với chúng tôi
+              Your Path to 
+              <span className="text-blue-600"> U.S. Residency</span>
+              <br />Starts Here
             </h1>
             
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              An tâm đầu tư EB-5 trước khi Luật Bất Hồi Tố hết hiệu lực. Với 10 năm kinh nghiệm và 500+ nhà đầu tư thành công, chúng tôi hiểu rõ cách bảo vệ quyền lợi của bạn. Hãy để chúng tôi giúp bạn định cư Hoa Kỳ một cách nhanh chóng và hiệu quả. 
+              Don't miss the RIA grandfathering deadline. With a decade of EB-5 expertise, 
+              we've guided 500+ investors to success. Let us secure your American dream before it's too late.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg flex items-center justify-center">
-                Bắt đầu hành trình EB-5 của bạn
+                Start Your EB-5 Journey
                 <ArrowRight className="h-5 w-5 ml-2" />
               </button>
               <button className="border border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold text-lg">
@@ -35,36 +36,36 @@ const Hero: React.FC = () => {
             <div className="flex items-center space-x-8">
               <div className="flex items-center">
                 <Shield className="h-6 w-6 text-green-600 mr-2" />
-                <span className="text-gray-600">Thành tích đã được chứng minh</span>
+                <span className="text-gray-600">Proven Track Record</span>
               </div>
               <div className="flex items-center">
                 <Award className="h-6 w-6 text-blue-600 mr-2" />
-                <span className="text-gray-600">Hơn 500 hồ sơ thành công</span>
+                <span className="text-gray-600">500+ Successful Cases</span>
               </div>
             </div>
           </div>
           
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Nắm bắt cơ hội đầu tư ngay hôm nay</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Act Now?</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-red-100 rounded-full p-1 mt-1 mr-3">
                     <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                   </div>
-                  <span className="text-gray-700">Bảo vệ khoản đầu tư EB-5 của bạn. 30/09/2026 là cơ hội cuối cùng để bảo lưu quyền lợi nhà đầu tư (Grandfathering)</span>
+                  <span className="text-gray-700">RIA grandfathering expires September 30, 2026</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-blue-100 rounded-full p-1 mt-1 mr-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                   </div>
-                  <span className="text-gray-700">Nộp hồ sơ sớm - Ưu tiên xét duyệt, rút ngắn thời gian chờ đợi</span>
+                  <span className="text-gray-700">Processing times increasing due to high demand</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mt-1 mr-3">
                     <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
-                  <span className="text-gray-700">Số lượng dự án EB-5 chất lượng, đặc biệt là các dự án ưu tiên phê duyệt (Rural) đang trở nên khan hiếm</span>
+                  <span className="text-gray-700">Limited qualifying projects available</span>
                 </li>
               </ul>
             </div>
