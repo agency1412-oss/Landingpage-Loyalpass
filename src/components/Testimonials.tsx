@@ -4,8 +4,8 @@ import { Star, Quote } from 'lucide-react';
 const Testimonials: React.FC = () => {
   const testimonials = [
     {
-      name: "David Chen",
-      location: "Shanghai, China → California, USA",
+      name: "Chị Trần N.T.N.",
+      location: "Chấp thuận I-526E ngày 19/9/2025",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
       text: "Loyalpass made our EB-5 journey seamless. Their expertise in project selection was invaluable, and their team guided us through every complexity with patience and professionalism. We received our green cards exactly as promised.",
@@ -13,8 +13,8 @@ const Testimonials: React.FC = () => {
       year: "2023"
     },
     {
-      name: "Sarah Al-Rashid", 
-      location: "Dubai, UAE → New York, USA",
+      name: "Anh Nguyen H.T.", 
+      location: "Chấp thuận I-526E ngày 21/01/2025",
       image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
       text: "The transparency and communication from Loyalpass exceeded all expectations. They were always available for questions and provided detailed updates throughout the process. Worth every penny for peace of mind.",
@@ -22,8 +22,8 @@ const Testimonials: React.FC = () => {
       year: "2022"
     },
     {
-      name: "Roberto Silva",
-      location: "São Paulo, Brazil → Florida, USA",
+      name: "Anh Trương K. H & Chị Lê T. D. V.",
+      location: "Chấp thuận I-526E ngày 06/08/2025",
       image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
       text: "After a disappointing experience with another firm, Loyalpass rescued our case. Their attention to detail and proactive approach turned our denied petition into an approval. Truly grateful for their dedication.",
@@ -31,8 +31,8 @@ const Testimonials: React.FC = () => {
       year: "2024"
     },
     {
-      name: "Dr. Priya Patel",
-      location: "Mumbai, India → Texas, USA",
+      name: "Em Trương B.N.",
+      location: "Được cấp Thẻ Xanh tháng 8/2025",
       image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
       text: "As a busy professional, I needed experts I could trust completely. Loyalpass delivered exceptional service while I focused on my career. Their knowledge of the medical field EB-5 applications was impressive.",
@@ -46,11 +46,10 @@ const Testimonials: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            What Our Clients Say
+            Khách hàng nói về chúng tôi
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from real clients who trusted us with 
-            their EB-5 journey and achieved their American dream.
+            Hãy lắng nghe những chia sẻ từ khách hàng của chúng tôi và bắt đầu hành trình EB-5 của bạn ngay hôm nay.
           </p>
         </div>
 
@@ -91,17 +90,16 @@ const Testimonials: React.FC = () => {
 
         <div className="mt-16 text-center">
           <div className="bg-blue-600 rounded-xl p-8 text-white">
-            <h3 className="text-3xl font-bold mb-4">Join Our Success Stories</h3>
+            <h3 className="text-3xl font-bold mb-4">Hãy trở thành câu chuyện thành công tiếp theo của chúng tôi</h3>
             <p className="text-xl opacity-90 mb-6 max-w-2xl mx-auto">
-              Over 500 families have trusted us with their EB-5 journey. 
-              Let us help you become our next success story.
+              "Hơn 500 gia đình đã tin tưởng chúng tôi trong hành trình EB-5. Hãy để chúng tôi giúp bạn trở thành câu chuyện thành công tiếp theo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-                Read More Success Stories
+                Đọc thêm các câu chuyện thành công
               </button>
               <button className="border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition-colors font-semibold">
-                Schedule Your Consultation
+                Đặt lịch tư vấn ngay hôm nay
               </button>
             </div>
           </div>
