@@ -32,7 +32,6 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-semibold mb-6">Thông báo quan trọng</h4>
             <div className="bg-red-900 border border-red-700 rounded-lg p-4 mb-6">
-              <p className="text-red-100 text-sm font-semibold mb-2">2026 Deadline Alert</p>
               <p className="text-red-200 text-sm">
                 Chính sách bảo lưu RIA sẽ hết hiệu lực vào 30/09/2026. Đừng bỏ lỡ mốc thời gian quan trọng này.
               </p>
