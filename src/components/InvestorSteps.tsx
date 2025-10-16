@@ -101,12 +101,12 @@ const InvestorSteps: React.FC = () => {
 
         <div className="mt-12 text-center">
           <div className="bg-blue-600 text-white p-8 rounded-xl">
-            <h3 className="text-2xl font-bold mb-4">Total Timeline: 2-3 Years to Permanent Residency</h3>
+            <h3 className="text-2xl font-bold mb-4">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
             <p className="text-lg opacity-90 mb-6">
-              With proper preparation and expert guidance, most clients achieve permanent resident status within 24-36 months.
+              Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
             </p>
             <button className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
-              Start Your Timeline Today
+              Bắt đầu Lộ trình của bạn ngay hôm nay
             </button>
           </div>
         </div>
