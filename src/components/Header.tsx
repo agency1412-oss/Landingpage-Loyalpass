@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <img src="/loyalpass-02.png" alt="Loyalpass" className="h-12 w-auto" />
+            <img src="/loyalpass.png" alt="Loyalpass" className="h-12 w-auto" />
           </div>
           
           <nav className="hidden md:flex space-x-8">
