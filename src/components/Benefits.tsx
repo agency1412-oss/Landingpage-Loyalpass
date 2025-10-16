@@ -11,15 +11,15 @@ const Benefits: React.FC = () => {
     },
     {
       icon: Users,
-      title: "Inclusive Family Benefits",
-      description: "Secure residency not just for yourself, but for your entire family including spouse and unmarried children under 21.",
-      features: ["Spouse inclusion", "Children under 21", "Path to citizenship"]
+      title: "Lợi ích cho cả gia đình",
+      description: "Thẻ xanh cho cả gia đình bao gồm vợ chồng và các con dưới 21 tuổi còn độc thân.",
+      features: ["Trờ thành công dân Hoa Kỳ sau 5 năm nhập cư"]
     },
     {
       icon: Trending,
-      title: "Boundless Opportunities",
-      description: "Access world-class education, healthcare, business opportunities, and the freedom to live anywhere in the United States.",
-      features: ["Educational access", "Healthcare benefits", "Business freedom"]
+      title: "Cơ hội vượt trội",
+      description: "Tiếp cận nền giáo dục, y tế đẳng cấp thế giới",
+      features: ["Ưu đãi học phí dành riêng cho thường trú nhân Hoa Kỳ", "Mở ra các cơ hội kinh doanh và tự do sống ở bất cứ "]
     }
   ];
 
