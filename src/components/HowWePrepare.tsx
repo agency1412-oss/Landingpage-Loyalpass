@@ -65,42 +65,6 @@ const HowWePrepare: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 text-white">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-4">Our Preparation Promise</h3>
-              <p className="text-lg opacity-90 mb-6">
-                We don't just handle your EB-5 application — we architect your success. 
-                Every document, every strategy, every decision is made with your approval and peace of mind in mind.
-              </p>
-              <div className="flex items-center space-x-4">
-                <Clock className="h-6 w-6" />
-                <span className="text-lg">Average case preparation: 8-12 weeks</span>
-              </div>
-            </div>
-            <div className="bg-white/10 rounded-xl p-6">
-              <h4 className="text-xl font-bold mb-4">What Sets Us Apart:</h4>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <CheckCircle2 className="h-5 w-5 mr-2" />
-                  Personalized strategy for each client
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle2 className="h-5 w-5 mr-2" />
-                  Direct attorney involvement
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle2 className="h-5 w-5 mr-2" />
-                  Transparent progress tracking
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle2 className="h-5 w-5 mr-2" />
-                  No surprises, no hidden fees
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
