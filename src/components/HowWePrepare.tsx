@@ -5,27 +5,27 @@ const HowWePrepare: React.FC = () => {
   const preparations = [
     {
       icon: Search,
-      title: "Comprehensive Due Diligence",
-      description: "We conduct thorough project analysis, developer background checks, and market research to identify the safest investment opportunities.",
-      features: ["Financial analysis", "Market research", "Legal compliance review", "Risk assessment"]
+      title: "Thẩm định toàn diện",
+      description: "Chúng tôi tiến hành phân tích dự án kỹ lưỡng, kiểm tra lý lịch nhà phát triển và nghiên cứu thị trường để xác định các cơ hội đầu tư an toàn nhất.",
+      features: ["Phân tích tài chính đảm bảo an toàn cho khoản đầu tư", "Đánh giá tuân thủ pháp lý đảm bảo an toàn thẻ xanh vĩnh viễn", "Nghiên cứu thị trường đánh giá tính khả thi của dự án", "Đánh giá rủi ro và các biện pháp hạn chế rủi ro"]
     },
     {
       icon: FileText,
-      title: "Meticulous Documentation",
-      description: "Our team prepares bulletproof documentation packages that exceed USCIS standards, minimizing the risk of RFEs or denials.",
-      features: ["Source of funds preparation", "Business plan development", "Legal document review", "Translation services"]
+      title: "Quy trình chuẩn bị hồ sơ kỹ lưỡng",
+      description: "Đội ngũ của chúng tôi chuẩn bị các bộ hồ sơ với tiêu chí đầy đủ, đảm bảo tuân thủ mọi tiêu chuẩn khắt khe, và đáp ứng các xu hướng xét duyệt của USCIS.",
+      features: ["Chuẩn bị kỹ trong từng chi tiết hồ sơ nguồn vốn", "Xem xét kỹ lưỡng tính pháp lý, thống nhất của từng tài liệu", "Hồ sơ nguồn vốn được trình bày khoa học, mạch lạc", "Xem xét kỹ lưỡng hồ sơ của bạn qua nhiều bước, đảm bảo đáp ứng mọi yêu cầu của USCIS"]
     },
     {
       icon: Shield,
-      title: "Risk Mitigation Strategies",
-      description: "We identify potential challenges before they become problems, implementing protective measures throughout your EB-5 journey.",
-      features: ["Compliance monitoring", "Project oversight", "Legal protection", "Contingency planning"]
+      title: "Chiến lược giảm thiểu rủi ro",
+      description: "Chúng tôi xác định những thách thức tiềm ẩn trước khi chúng trở thành vấn đề, thực hiện các biện pháp bảo vệ trong suốt hành trình EB-5 của bạn.",
+      features: ["Đánh giá kỹ lưỡng tính phù hợp của từng khách hàng với chương trình EB-5", "Cập nhật liên tục sự thay đổi trong chính sách xét duyệt nhập cư của chính phủ Hoa Kỳ", "Giám sát tuân thủ đảm bảo dự án tuân thủ mọi quy định của USCIS", "Giám sát dự án theo dõi sát sao tiến độ và hiệu quả của dự án đầu tư"]
     },
     {
       icon: Users,
-      title: "Dedicated Support Team",
-      description: "Your dedicated team of attorneys, financial analysts, and immigration specialists work exclusively on your case from start to finish.",
-      features: ["Personal case manager", "Attorney oversight", "Regular updates", "24/7 support availability"]
+      title: "Đội ngũ hỗ trợ tận tâm đồng hành cùng khách hàng",
+      description: "Tại Loyalpass, chúng tôi hiểu rằng mỗi hồ sơ EB-5 là một hành trình cá nhân quan trọng. Vì vậy chúng tôi cung cấp dịch vụ trọn gói, minh bạch và cam kết đồng hành cùng khách hàng từ bước chuẩn bị đến khi hoàn tất.",
+      features: ["Mỗi khách hàng sẽ có đội ngũ phụ trách chuyên biệt", "Hồ sơ của khách hàng được theo dõi kỹ lưỡng, cập nhật tiến độ định kỳ", "Giám sát của luật sư - mọi quyết định và các bước thực hiện đều có tư vấn pháp lý chuyên sâu", "Hỗ trợ 24/7 - đội ngũ sẵn sàng giải đáp và xử lý khẩn cấp bất kỳ lúc nào"]
     }
   ];
 
@@ -34,11 +34,10 @@ const HowWePrepare: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            How Exactly We Prepare You for EB-5 Success
+            Loyalpass chuẩn bị cho khách hàng thành công như thế nào?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Success in EB-5 isn't accidental. It's the result of meticulous preparation, 
-            expert guidance, and unwavering attention to detail at every step.
+            Thành công trong EB-5 đến từ sự chuẩn bị tỉ mỉ, hướng dẫn chuyên môn và sự tận tâm. Loyalpass giúp khách hàng tiết kiệm thời gian, công sức và tối ưu hóa cơ hội đạt được thẻ xanh.
           </p>
         </div>
 
