@@ -56,7 +56,7 @@ const Benefits: React.FC = () => {
               </ul>
               
               <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
-                Learn More →
+                Tìm hiểu thêm →
               </button>
             </div>
           ))}
