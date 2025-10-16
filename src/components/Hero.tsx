@@ -9,11 +9,12 @@ const Hero: React.FC = () => {
           <div>
             <div className="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Clock className="h-4 w-4 mr-2" />
-              Critical Deadline: September 30, 2026
+              Nộp hồ sơ để được bảo vệ quyền lợi toàn diện trước: 30 tháng 9, 2026
             </div>
             
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Xây Dựng Tương Lai Vững Chắc Tại Hoa Kỳ
+              Xây dựng tương lai vững chắc 
+              <span className="text-blue-600"> tại Hoa Kỳ</span>
               <br />Bắt đầu với chúng tôi
             </h1>
             
