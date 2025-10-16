@@ -6,8 +6,8 @@ const Benefits: React.FC = () => {
     {
       icon: Zap,
       title: "EB-5 - Con đường nhanh nhất để định cư",
-      description: "Bypass traditional immigration queues with direct path to permanent residency through strategic investment.",
-      features: ["Permanent resident status", "No sponsor required", "Direct application process"]
+      description: "Bỏ qua các hàng chờ di trú truyền thống, trở thành thường trú nhân bằng con đường trực tiếp thông qua việc đầu tư chiến lược.",
+      features: ["Không yêu cầu người bảo lãnh", "Thẻ xanh nhanh chóng chỉ từ 6-24 tháng"]
     },
     {
       icon: Users,
