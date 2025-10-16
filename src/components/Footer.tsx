@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8">
           <div>
-            <img src="/loyalpass-02.png" alt="Loyalpass" className="h-12 w-auto mb-6" />
+            <img src="/loyalpass copy copy.png" alt="Loyalpass" className="h-12 w-auto mb-6" />
             <p className="text-gray-300 mb-6 leading-relaxed">
               Where there's a will, there's a way. Người bạn đồng hành đáng tin cậy trong lĩnh vực đầu tư định cư  EB-5 hơn 10+ năm kinh nghiệm.
             </p>
