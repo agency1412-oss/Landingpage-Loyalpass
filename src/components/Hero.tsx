@@ -46,25 +46,25 @@ const Hero: React.FC = () => {
           
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Act Now?</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Nắm bắt cơ hội đầu tư ngay hôm nay</h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-red-100 rounded-full p-1 mt-1 mr-3">
                     <div className="w-2 h-2 bg-red-600 rounded-full"></div>
                   </div>
-                  <span className="text-gray-700">RIA grandfathering expires September 30, 2026</span>
+                  <span className="text-gray-700">Bảo vệ khoản đầu tư EB-5 của bạn. 30/09/2026 là cơ hội cuối cùng để bảo lưu quyền lợi nhà đầu tư (Grandfathering)</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-blue-100 rounded-full p-1 mt-1 mr-3">
                     <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
                   </div>
-                  <span className="text-gray-700">Processing times increasing due to high demand</span>
+                  <span className="text-gray-700">Nộp hồ sơ sớm - Ưu tiên xét duyệt, rút ngắn thời gian chờ đợi</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-green-100 rounded-full p-1 mt-1 mr-3">
                     <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                   </div>
-                  <span className="text-gray-700">Limited qualifying projects available</span>
+                  <span className="text-gray-700">Số lượng dự án EB-5 chất lượng, đặc biệt là các dự án ưu tiên phê duyệt (Rural) đang trở nên khan hiếm</span>
                 </li>
               </ul>
             </div>
