@@ -99,7 +99,7 @@ const LoyalpassStory: React.FC = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg group-hover:text-blue-700 transition-colors duration-300">{value.title}</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed text-justify">{value.description}</p>
                   </div>
                 </div>
               </div>
