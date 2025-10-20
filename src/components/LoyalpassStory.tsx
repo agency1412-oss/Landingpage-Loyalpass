@@ -68,15 +68,15 @@ const LoyalpassStory: React.FC = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
               Câu chuyện Loyalpass
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed text-justify">
               Mười năm kinh nghiệm, Loyalpass không chỉ là một công ty tư vấn EB-5. Chúng tôi đã trở thành đối tác đáng tin cậy trong hành trình quan trọng, kiến tạo con đường định cư thành công cho khách hàng - con đường đến thường trú nhân và công dân Hoa Kỳ.
             </p>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-lg text-gray-600 mb-8 text-justify">
               Được xây dựng trên nền tảng "where there's a will, there's a way", chúng tôi đã vượt qua những thách thức phức tạp của luật nhập cư, vui mừng với vô số câu chuyện thành công, sát cánh cùng khách hàng qua mọi thử thách trong quá trình thực hiện hồ sơ.
             </p>
             <div className="bg-blue-600 text-white p-6 rounded-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-2xl font-bold mb-2">Sứ mệnh của chúng tôi</h3>
-              <p className="text-lg">
+              <p className="text-lg text-justify">
                 Cung cấp hướng dẫn chuyên môn, hỗ trợ vững chắc và dịch vụ minh bạch để biến những giấc mơ nhập cư thành hiện thực.
               </p>
             </div>
