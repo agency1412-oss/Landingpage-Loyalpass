@@ -40,8 +40,8 @@ const Hero: React.FC = () => {
             </div>
             
             <h1 className={`text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`} style={{ transitionDelay: '200ms' }}>
-              Xây dựng tương lai vững chắc tại
-              <span className="text-blue-600"> Hoa Kỳ</span>
+              Xây dựng TƯƠNG LAI<br />
+              vững chắc tại<span className="text-blue-600"> HOA KỲ</span>
             </h1>
             
             <p className={`text-xl text-white mb-8 leading-relaxed bg-blue-600 p-6 rounded-2xl transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`} style={{ transitionDelay: '300ms' }}>
