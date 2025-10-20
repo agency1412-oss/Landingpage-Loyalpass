@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
               <span className="text-blue-600"> tại Hoa Kỳ</span>
             </h1>
             
-            <p className="text-xl text-blue-600 mb-8 leading-relaxed bg-gray-400/50 p-4 rounded-lg">
+            <p className="text-xl text-black mb-8 leading-relaxed bg-gray-400/50 p-4 rounded-lg">
               An tâm đầu tư EB-5 trước khi Luật Bất Hồi Tố hết hiệu lực. Với 10 năm kinh nghiệm và 500+ nhà đầu tư thành công, chúng tôi hiểu rõ cách bảo vệ quyền lợi của bạn. Hãy để chúng tôi giúp bạn định cư Hoa Kỳ một cách nhanh chóng và hiệu quả.
             </p>
             
