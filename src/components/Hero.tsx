@@ -13,12 +13,12 @@ const Hero: React.FC = () => {
               Nộp hồ sơ để được bảo vệ quyền lợi toàn diện trước: 30 tháng 9, 2026
             </div>
             
-            <h1 className="text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+            <h1 className="text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Xây dựng tương lai vững chắc
-              <span className="text-blue-300 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"> tại Hoa Kỳ</span>
+              <span className="text-blue-400"> tại Hoa Kỳ</span>
             </h1>
             
-            <p className="text-xl text-white mb-8 leading-relaxed drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] font-semibold">
+            <p className="text-xl text-gray-100 mb-8 leading-relaxed">
               An tâm đầu tư EB-5 trước khi Luật Bất Hồi Tố hết hiệu lực. Với 10 năm kinh nghiệm và 500+ nhà đầu tư thành công, chúng tôi hiểu rõ cách bảo vệ quyền lợi của bạn. Hãy để chúng tôi giúp bạn định cư Hoa Kỳ một cách nhanh chóng và hiệu quả.
             </p>
             
@@ -32,11 +32,11 @@ const Hero: React.FC = () => {
             <div className="flex items-center space-x-8">
               <div className="flex items-center">
                 <Shield className="h-6 w-6 text-green-400 mr-2" />
-                <span className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">Thành tích đã được chứng minh</span>
+                <span className="text-gray-100">Thành tích đã được chứng minh</span>
               </div>
               <div className="flex items-center">
                 <Award className="h-6 w-6 text-blue-400 mr-2" />
-                <span className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">Hơn 500 hồ sơ thành công</span>
+                <span className="text-gray-100">Hơn 500 hồ sơ thành công</span>
               </div>
             </div>
           </div>
