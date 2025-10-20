@@ -77,13 +77,13 @@ const Benefits: React.FC = () => {
               </div>
 
               <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-700 transition-colors duration-300">{benefit.title}</h3>
-              <p className="text-gray-600 mb-6 leading-relaxed flex-grow">{benefit.description}</p>
+              <p className="text-gray-600 mb-6 leading-relaxed flex-grow text-justify">{benefit.description}</p>
 
               <ul className="space-y-3 mb-6">
                 {benefit.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start text-gray-700 group/item hover:translate-x-1 transition-transform duration-300">
                     <ArrowRight className="h-4 w-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0 group-hover/item:text-blue-700 group-hover/item:translate-x-1 group-hover/item:scale-110 transition-all duration-300" />
-                    <span className="text-sm leading-relaxed">{feature}</span>
+                    <span className="text-sm leading-relaxed text-justify">{feature}</span>
                   </li>
                 ))}
               </ul>
