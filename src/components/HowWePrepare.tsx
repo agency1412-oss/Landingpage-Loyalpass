@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FileText, Search, Shield, Users, CheckCircle2, Clock } from 'lucide-react';
 
 const HowWePrepare: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   const preparations = [
     {
       icon: Search,
@@ -30,9 +55,9 @@ const HowWePrepare: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section ref={sectionRef} className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 ${isVisible ? 'animate-on-scroll' : 'opacity-0'}`}>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Loyalpass chuẩn bị cho khách hàng thành công như thế nào?
           </h2>
@@ -43,22 +68,31 @@ const HowWePrepare: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {preparations.map((prep, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-8 hover:bg-blue-50 transition-colors group">
-              <div className="flex items-start space-x-6">
-                <div className="bg-blue-600 rounded-lg p-3 group-hover:bg-blue-700 transition-colors">
+            <div
+              key={index}
+              className={`bg-gray-50 rounded-xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full ${
+                isVisible ? `animate-on-scroll animate-delay-${Math.min(index, 3)}00` : 'opacity-0'
+              }`}
+            >
+              <div className="flex items-start space-x-6 mb-6">
+                <div className="bg-blue-600 rounded-lg p-3 group-hover:bg-blue-700 group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                   <prep.icon className="h-6 w-6 text-white" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">{prep.title}</h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">{prep.description}</p>
-                  <div className="grid grid-cols-2 gap-2">
-                    {prep.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-gray-700">
-                        <CheckCircle2 className="h-4 w-4 text-green-600 mr-2" />
-                        <span className="text-sm">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">{prep.title}</h3>
+                </div>
+              </div>
+
+              <div className="flex-1 flex flex-col">
+                <p className="text-gray-600 mb-6 leading-relaxed">{prep.description}</p>
+
+                <div className="mt-auto space-y-3">
+                  {prep.features.map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-start text-gray-700 group/item">
+                      <CheckCircle2 className="h-4 w-4 text-green-600 mr-3 mt-1 flex-shrink-0 group-hover/item:scale-110 transition-transform" />
+                      <span className="text-sm leading-relaxed">{feature}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
