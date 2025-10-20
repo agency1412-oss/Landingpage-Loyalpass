@@ -50,7 +50,7 @@ const WhyEB5Guide: React.FC = () => {
               Đầu tư EB-5 yêu cầu chịu sự rủi ro
             </h3>
             <p className="text-gray-600 mb-6">
-              USCIS yêu cầu khoản đầu tư của bạn cần chịu sự rủi ro, việc đánh giá các rủi ro tiềm ẩn và các biện pháp giảm thiểu rủi ro giúp khoản đầu tư của bạn được an toàn.\n\nĐồng hành cùng hơn 500 nhà đầu tư EB-5 Việt Nam, chúng tôi có bộ tiêu chuẩn đánh giá một dự án EB-5 an toàn, giúp bảo vệ vốn đầu tư của bạn.
+              USCIS yêu cầu khoản đầu tư của bạn cần chịu sự rủi ro, việc đánh giá các rủi ro tiềm ẩn và các biện pháp giảm thiểu rủi ro giúp khoản đầu tư của bạn được an toàn. Đồng hành cùng hơn 500 nhà đầu tư EB-5 Việt Nam, chúng tôi có bộ tiêu chuẩn đánh giá một dự án EB-5 an toàn, giúp bảo vệ vốn đầu tư của bạn.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ const WhyEB5Guide: React.FC = () => {
               USCIS thường xuyên thay đổi chính sách xét duyệt
             </h3>
             <p className="text-gray-600 mb-6">
-              USCIS phê duyệt đơn I-526E và I-829 theo những tiêu chuẩn nhất định, cơ quan này vẫn thường xuyên thay đổi chính sách phê duyệt liên quan tới nguồn tiền, chuyển tiền và việc sử dụng tiền EB-5 trong dự án.\n\nLàm việc với các hãng luật hàng đầu, thường xuyên hỗ trợ cộng đồng EB-5 Việt Nam, cho phép chúng tôi nắm bắt nhanh chóng xu hướng xét duyệt từ USCIS, giúp có những tư vấn phù hợp nhất cho khách hàng.
+              USCIS phê duyệt đơn I-526E và I-829 theo những tiêu chuẩn nhất định, cơ quan này vẫn thường xuyên thay đổi chính sách phê duyệt liên quan tới nguồn tiền, chuyển tiền và việc sử dụng tiền EB-5 trong dự án. Làm việc với các hãng luật hàng đầu, thường xuyên hỗ trợ cộng đồng EB-5 Việt Nam, cho phép chúng tôi nắm bắt nhanh chóng xu hướng xét duyệt từ USCIS, giúp có những tư vấn phù hợp nhất cho khách hàng.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const WhyEB5Guide: React.FC = () => {
               Am hiểu tình hình di trú giúp bạn chuẩn bị tốt cho kế hoạch nhập cư
             </h3>
             <p className="text-gray-600 mb-6">
-              Nắm bắt được các tác động của chính sách nhập cư tới quá trình xử lý hồ sơ, giúp bạn có được kế hoạch chuẩn bị tốt nhất cho việc nhập cư.\n\nCùng kinh nghiệm nhiều năm, trải qua nhiều biến động của chính sách nhập cư và chương trình EB-5, Loyalpass hỗ trợ các khách hàng có sự chuẩn bị và lộ trình nhập cư một cách chính xác, hiệu quả và bình tâm.
+              Nắm bắt được các tác động của chính sách nhập cư tới quá trình xử lý hồ sơ, giúp bạn có được kế hoạch chuẩn bị tốt nhất cho việc nhập cư. Cùng kinh nghiệm nhiều năm, trải qua nhiều biến động của chính sách nhập cư và chương trình EB-5, Loyalpass hỗ trợ các khách hàng có sự chuẩn bị và lộ trình nhập cư một cách chính xác, hiệu quả và bình tâm.
             </p>
           </div>
         </div>
