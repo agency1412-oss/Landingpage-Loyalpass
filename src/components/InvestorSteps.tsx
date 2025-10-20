@@ -145,20 +145,30 @@ const InvestorSteps: React.FC = () => {
         </div>
 
         <div className="mt-8 sm:mt-12 text-center">
-          <div className="bg-blue-600 text-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
-            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 leading-tight">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
-            <p className="text-sm sm:text-base lg:text-lg opacity-90 mb-5 sm:mb-6 leading-relaxed">
-              Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
-            </p>
-            <button
-              onClick={() => {
-                const contactSection = document.getElementById('contact');
-                contactSection?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="bg-white text-blue-600 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold text-sm sm:text-base"
-            >
-              Bắt đầu Lộ trình của bạn ngay hôm nay
-            </button>
+          <div className="relative bg-blue-600 text-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 overflow-hidden">
+            <div className="absolute inset-0 z-0">
+              <img
+                src="/img6.jpg"
+                alt="Background"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gray-900 opacity-70"></div>
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 leading-tight">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
+              <p className="text-sm sm:text-base lg:text-lg opacity-90 mb-5 sm:mb-6 leading-relaxed">
+                Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
+              </p>
+              <button
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  contactSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-white text-blue-600 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold text-sm sm:text-base"
+              >
+                Bắt đầu Lộ trình của bạn ngay hôm nay
+              </button>
+            </div>
           </div>
         </div>
       </div>
