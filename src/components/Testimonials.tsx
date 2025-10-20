@@ -64,7 +64,7 @@ const Testimonials: React.FC = () => {
       location: "Chấp thuận I-526E ngày 06/08/2025",
       image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Thân gửi Team Loyalpass, Lời đầu tiên, gia đình anh chị xin gửi lời cảm ơn chân thành đến đội ngũ Loyalpass đã tận tâm hỗ trợ và đồng hành cùng gia đình anh chị trong suốt quá trình làm hồ sơ EB-5 cho con. Là một người có nhiều kinh nghiệm làm việc với doanh nghiệp Hoa Kỳ và hiểu biết về di trú, nhưng anh cũng hết sức bất ngờ về kết quả của hồ sơ EB-5 của bé NGỌC, chỉ mất 6 tháng từ lúc bắt đầu mở hồ sơ cho đến khi nhận được thẻ xanh 2 năm, nhanh hơn cả mong đợi của gia đình. Để có được kết quả tuyệt vời đó, gia đình tin rằng, nhờ sự chuyên nghiệp, nhiệt tình và minh bạch của các anh/chị trong công ty Loyalpass cũng như đối tác di trú tại Hoa Kỳ, đã kịp thời giải đáp mọi thắc mắc, từng bước thực hiện đều được hướng dẫn cẩn thận. Gia đình đã thật sự cảm thấy yên tâm tin tưởng khi làm việc với cty tư vấn Loyalpass. Một lần nữa, xin bày tỏ lời cảm ơn chân thành đến công ty. Chúc Loyalpass ngày càng phát triển và tiếp tục là người bạn đồng hành đáng tin cậy cho nhiều gia đình Việt Nam trên con đường định cư và hướng đến tương lai tốt đẹp hơn. Thân mến,",
+      text: "Thân gửi Team Loyalpass,\n\nLời đầu tiên, gia đình anh chị xin gửi lời cảm ơn chân thành đến đội ngũ Loyalpass đã tận tâm hỗ trợ và đồng hành cùng gia đình anh chị trong suốt quá trình làm hồ sơ EB-5 cho con. Là một người có nhiều kinh nghiệm làm việc với doanh nghiệp Hoa Kỳ và hiểu biết về di trú, nhưng anh cũng hết sức bất ngờ về kết quả của hồ sơ EB-5 của bé NGỌC, chỉ mất 6 tháng từ lúc bắt đầu mở hồ sơ cho đến khi nhận được thẻ xanh 2 năm, nhanh hơn cả mong đợi của gia đình.\n\nĐể có được kết quả tuyệt vời đó, gia đình tin rằng, nhờ sự chuyên nghiệp, nhiệt tình và minh bạch của các anh/chị trong công ty Loyalpass cũng như đối tác di trú tại Hoa Kỳ, đã kịp thời giải đáp mọi thắc mắc, từng bước thực hiện đều được hướng dẫn cẩn thận. Gia đình đã thật sự cảm thấy yên tâm tin tưởng khi làm việc với cty tư vấn Loyalpass.\n\nMột lần nữa, xin bày tỏ lời cảm ơn chân thành đến công ty. Chúc Loyalpass ngày càng phát triển và tiếp tục là người bạn đồng hành đáng tin cậy cho nhiều gia đình Việt Nam trên con đường định cư và hướng đến tương lai tốt đẹp hơn.\n\nThân mến,",
       project: "Direct Investment",
       year: "2024"
     },
@@ -129,7 +129,7 @@ const Testimonials: React.FC = () => {
                     className="cursor-pointer"
                     onClick={() => isLongText && toggleExpand(index)}
                   >
-                    <p
+                    <div
                       className={`text-gray-700 leading-relaxed mb-2 pl-6 transition-all duration-300 ${
                         !isExpanded && isLongText ? 'line-clamp-3' : ''
                       }`}
@@ -140,8 +140,14 @@ const Testimonials: React.FC = () => {
                         overflow: 'hidden'
                       }}
                     >
-                      {testimonial.text}
-                    </p>
+                      {testimonial.text.split('\n').map((paragraph, pIndex) => (
+                        paragraph.trim() && (
+                          <p key={pIndex} className="mb-3 last:mb-0">
+                            {paragraph}
+                          </p>
+                        )
+                      ))}
+                    </div>
                     {isLongText && (
                       <button
                         className="text-blue-600 text-sm font-semibold hover:text-blue-700 hover:gap-1 transition-all pl-6 inline-flex items-center gap-0"
