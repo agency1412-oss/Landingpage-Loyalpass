@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { AlertTriangle, MapPin, TrendingUp } from 'lucide-react';
 
 const WhyEB5Guide: React.FC = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" ref={sectionRef}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
@@ -15,8 +39,13 @@ const WhyEB5Guide: React.FC = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
-            <TrendingUp className="h-12 w-12 text-blue-600 mb-6" />
+          <div
+            className={`bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 transition-all duration-700 transform hover:scale-105 hover:shadow-2xl ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '0ms' }}
+          >
+            <TrendingUp className="h-12 w-12 text-blue-600 mb-6 transition-transform duration-300 hover:scale-110" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Đầu tư EB-5 yêu cầu chịu sự rủi ro
             </h3>
@@ -25,8 +54,13 @@ const WhyEB5Guide: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
-            <MapPin className="h-12 w-12 text-green-600 mb-6" />
+          <div
+            className={`bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 transition-all duration-700 transform hover:scale-105 hover:shadow-2xl ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '150ms' }}
+          >
+            <MapPin className="h-12 w-12 text-green-600 mb-6 transition-transform duration-300 hover:scale-110" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               USCIS thường xuyên thay đổi chính sách xét duyệt
             </h3>
@@ -35,8 +69,13 @@ const WhyEB5Guide: React.FC = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8">
-            <AlertTriangle className="h-12 w-12 text-red-600 mb-6" />
+          <div
+            className={`bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8 transition-all duration-700 transform hover:scale-105 hover:shadow-2xl ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: '300ms' }}
+          >
+            <AlertTriangle className="h-12 w-12 text-red-600 mb-6 transition-transform duration-300 hover:scale-110" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Am hiểu tình hình di trú giúp bạn chuẩn bị tốt cho kế hoạch nhập cư
             </h3>
@@ -46,13 +85,18 @@ const WhyEB5Guide: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg">
+        <div
+          className={`bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-r-lg transition-all duration-700 transform hover:scale-102 hover:shadow-lg ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}
+          style={{ transitionDelay: '450ms' }}
+        >
           <div className="flex">
-            <AlertTriangle className="h-6 w-6 text-yellow-400 mr-3 mt-1" />
+            <AlertTriangle className="h-6 w-6 text-yellow-400 mr-3 mt-1 flex-shrink-0" />
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Bạn đã sẵn sàng cho EB-5 vào 2026?</h4>
               <p className="text-gray-700">
-                "BẢO VỆ KHOẢN ĐẦU TƯ EB-5 CỦA BẠN: Luật Bất Hồi Tố (RIA) mang đến sự bảo vệ quan trọng cho các nhà đầu tư, nhưng sẽ hết hiệu lực vào ngày 30/09/2026. Đừng bỏ lỡ cơ hội này! Đảm bảo suất đầu tư của bạn ngay bây giờ để tránh các yêu cầu khắt khe hơn và thời gian xử lý lâu hơn" 
+                "BẢO VỆ KHOẢN ĐẦU TƯ EB-5 CỦA BẠN: Luật Bất Hồi Tố (RIA) mang đến sự bảo vệ quan trọng cho các nhà đầu tư, nhưng sẽ hết hiệu lực vào ngày 30/09/2026. Đừng bỏ lỡ cơ hội này! Đảm bảo suất đầu tư của bạn ngay bây giờ để tránh các yêu cầu khắt khe hơn và thời gian xử lý lâu hơn"
                 <strong>Liên hệ tư vấn</strong>
               </p>
             </div>
