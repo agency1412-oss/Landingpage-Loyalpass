@@ -64,7 +64,7 @@ const Testimonials: React.FC = () => {
       location: "Chấp thuận I-526E ngày 06/08/2025",
       image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Nhờ sự tư vấn rõ ràng, nhanh chóng phản hồi , sự chuyên nghiệp và tận tuỵ của đội ngủ công ty đã giúp cho hồ sơ của bạn du học sinh nhận thẻ xanh trong khoảng thời gian nhanh nhất. Chân thành cám ơn các bạn.",
+      text: "Thân gửi Team Loyalpass, Lời đầu tiên, gia đình anh chị xin gửi lời cảm ơn chân thành đến đội ngũ Loyalpass đã tận tâm hỗ trợ và đồng hành cùng gia đình anh chị trong suốt quá trình làm hồ sơ EB-5 cho con. Là một người có nhiều kinh nghiệm làm việc với doanh nghiệp Hoa Kỳ và hiểu biết về di trú, nhưng anh cũng hết sức bất ngờ về kết quả của hồ sơ EB-5 của bé NGỌC, chỉ mất 6 tháng từ lúc bắt đầu mở hồ sơ cho đến khi nhận được thẻ xanh 2 năm, nhanh hơn cả mong đợi của gia đình. Để có được kết quả tuyệt vời đó, gia đình tin rằng, nhờ sự chuyên nghiệp, nhiệt tình và minh bạch của các anh/chị trong công ty Loyalpass cũng như đối tác di trú tại Hoa Kỳ, đã kịp thời giải đáp mọi thắc mắc, từng bước thực hiện đều được hướng dẫn cẩn thận. Gia đình đã thật sự cảm thấy yên tâm tin tưởng khi làm việc với cty tư vấn Loyalpass. Một lần nữa, xin bày tỏ lời cảm ơn chân thành đến công ty. Chúc Loyalpass ngày càng phát triển và tiếp tục là người bạn đồng hành đáng tin cậy cho nhiều gia đình Việt Nam trên con đường định cư và hướng đến tương lai tốt đẹp hơn. Thân mến,",
       project: "Direct Investment",
       year: "2024"
     },
