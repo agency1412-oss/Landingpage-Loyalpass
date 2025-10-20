@@ -65,28 +65,32 @@ const Benefits: React.FC = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`group bg-gray-50 rounded-xl p-8 hover:bg-blue-50 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${
+              className={`group bg-white border border-gray-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer flex flex-col h-full ${
                 isVisible ? `animate-on-scroll animate-delay-${index}00` : 'opacity-0'
               }`}
+              style={{
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)'
+              }}
             >
-              <div className="bg-blue-600 rounded-lg p-3 w-fit mb-6 group-hover:bg-blue-700 transition-all duration-300 group-hover:scale-110">
-                <benefit.icon className="h-6 w-6 text-white" />
+              <div className="bg-blue-600 rounded-xl p-3.5 w-fit mb-6 group-hover:bg-blue-700 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-md">
+                <benefit.icon className="h-7 w-7 text-white" />
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-              <p className="text-gray-600 mb-6">{benefit.description}</p>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-700 transition-colors duration-300">{benefit.title}</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed flex-grow">{benefit.description}</p>
 
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-3 mb-6">
                 {benefit.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-700">
-                    <ArrowRight className="h-4 w-4 text-blue-600 mr-2 group-hover:translate-x-1 transition-transform duration-300" />
-                    {feature}
+                  <li key={featureIndex} className="flex items-start text-gray-700 group/item hover:translate-x-1 transition-transform duration-300">
+                    <ArrowRight className="h-4 w-4 text-blue-600 mr-2 mt-0.5 flex-shrink-0 group-hover/item:text-blue-700 group-hover/item:translate-x-1 group-hover/item:scale-110 transition-all duration-300" />
+                    <span className="text-sm leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <button className="text-blue-600 font-semibold hover:text-blue-700 transition-all duration-300 hover:gap-2 inline-flex items-center">
-                Tìm hiểu thêm →
+              <button className="text-blue-600 font-semibold group-hover:text-blue-700 transition-all duration-300 inline-flex items-center gap-2 mt-auto group-hover:gap-3">
+                Tìm hiểu thêm
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>
           ))}
