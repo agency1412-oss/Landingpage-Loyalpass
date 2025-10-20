@@ -141,7 +141,7 @@ const ContactForm: React.FC = () => {
             <div className="pt-4">
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-4 px-8 rounded-lg font-semibold text-lg hover:bg-blue-700 transform hover:scale-[1.02] transition-all duration-200 shadow-5g hover:shadow-xl flex items-center justify-center gap-2"
+                className="w-full bg-blue-600 text-white py-4 px-8 rounded-5g font-semibold text-lg hover:bg-blue-700 transform hover:scale-[1.02] transition-all duration-200 shadow-5g hover:shadow-xl flex items-center justify-center gap-2"
               >
                 <Send className="h-5 w-5" />
                 Liên hệ
