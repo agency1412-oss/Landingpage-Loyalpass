@@ -1,101 +1,68 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { AlertTriangle, Shield, RefreshCw, TrendingUp } from 'lucide-react';
+import React from 'react';
+import { AlertTriangle, MapPin, TrendingUp } from 'lucide-react';
 
 const WhyEB5Guide: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
-
   return (
-    <section ref={sectionRef} className="py-20 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
-          <h2 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            EB-5 Is Very Different & You Need the Right Guidance
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            EB-5 Rất Khác Biệt & bạn cần những hướng dẫn chính xác
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            The EB-5 program is unlike any other immigration program, with unique complexities that require expert guidance.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Chương trình EB-5 không giống bất kỳ chương trình nhập cư nào khác, với những phức tạp đặc thù đòi hỏi sự hướng dẫn của chuyên gia.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div
-            className={`bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-400 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 group ${
-              isVisible ? 'animate-on-scroll' : 'opacity-0'
-            }`}
-          >
-            <div className="bg-blue-100 rounded-xl p-4 inline-flex mb-6 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-500">
-              <Shield className="h-10 w-10 text-blue-600 group-hover:text-white transition-colors duration-300" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-blue-700 transition-colors duration-300">
-              EB-5 Investment Involves Risk
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
+            <TrendingUp className="h-12 w-12 text-blue-600 mb-6" />
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Đầu tư EB-5 yêu cầu chịu sự rủi ro
             </h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              USCIS requires your investment to be at risk. Evaluating potential risks and applying mitigation strategies helps ensure your investment is safe.
+            <p className="text-gray-600 mb-6">
+              USCIS yêu cầu khoản đầu tư của bạn cần chịu sự rủi ro, việc đánh giá các rủi ro tiềm ẩn và các biện pháp giảm thiểu rủi ro giúp khoản đầu tư của bạn được an toàn. Đồng hành cùng hơn 500 nhà đầu tư EB-5 Việt Nam, chúng tôi có bộ tiêu chuẩn đánh giá một dự án EB-5 an toàn, giúp bảo vệ vốn đầu tư của bạn.
             </p>
-            <p className="text-gray-700 leading-relaxed font-medium">
-              Having worked with over 500 Vietnamese EB-5 investors, we have developed a set of standards to assess safe EB-5 projects and protect your capital.
-            </p>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Financial analysis & risk assessment</li>
+              <li>• Job creation verification</li>
+              <li>• Developer track record review</li>
+              <li>• Legal compliance evaluation</li>
+            </ul>
           </div>
 
-          <div
-            className={`bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-green-400 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 group ${
-              isVisible ? 'animate-on-scroll animate-delay-100' : 'opacity-0'
-            }`}
-          >
-            <div className="bg-green-100 rounded-xl p-4 inline-flex mb-6 group-hover:bg-green-600 group-hover:scale-110 transition-all duration-500">
-              <RefreshCw className="h-10 w-10 text-green-600 group-hover:text-white transition-colors duration-300" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-green-700 transition-colors duration-300">
-              USCIS Frequently Changes Its Adjudication Policies
+          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
+            <MapPin className="h-12 w-12 text-green-600 mb-6" />
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Already in the U.S.? EB-5 Still Works for You
             </h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              USCIS adjudicates Form I-526E and I-829 petitions based on specific standards but often updates its policies regarding source of funds, money transfer, and EB-5 project fund usage.
+            <p className="text-gray-600 mb-6">
+              Many assume EB-5 is only for those outside the U.S., but it's an excellent 
+              path for current visa holders seeking permanent status without employer dependency.
             </p>
-            <p className="text-gray-700 leading-relaxed font-medium">
-              Collaborating with leading law firms and continuously supporting the Vietnamese EB-5 community allows us to stay updated with USCIS trends and provide the most relevant advice to our clients.
-            </p>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Adjustment of status available</li>
+              <li>• No employer sponsorship required</li>
+              <li>• Freedom to change jobs immediately</li>
+              <li>• Family benefits included</li>
+            </ul>
           </div>
 
-          <div
-            className={`bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-purple-400 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 group ${
-              isVisible ? 'animate-on-scroll animate-delay-200' : 'opacity-0'
-            }`}
-          >
-            <div className="bg-purple-100 rounded-xl p-4 inline-flex mb-6 group-hover:bg-purple-600 group-hover:scale-110 transition-all duration-500">
-              <TrendingUp className="h-10 w-10 text-purple-600 group-hover:text-white transition-colors duration-300" />
-            </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-purple-700 transition-colors duration-300">
-              Understanding Immigration Trends Helps You Prepare Better
+          <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8">
+            <AlertTriangle className="h-12 w-12 text-red-600 mb-6" />
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Why Most People Miss: EB-5 Comes with Risks
             </h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              By monitoring immigration policy impacts on case processing, we help you prepare effectively for your immigration journey.
+            <p className="text-gray-600 mb-6">
+              Without proper guidance, investors face significant risks including investment 
+              loss, application denial, and missed deadlines that can derail their immigration plans.
             </p>
-            <p className="text-gray-700 leading-relaxed font-medium">
-              With years of experience navigating policy shifts and the EB-5 program, Loyalpass supports clients in building accurate, effective, and confident immigration plans.
-            </p>
+            <ul className="space-y-2 text-gray-700">
+              <li>• Investment capital at risk</li>
+              <li>• Complex legal requirements</li>
+              <li>• Strict documentation standards</li>
+              <li>• Timing-sensitive deadlines</li>
+            </ul>
           </div>
         </div>
 
