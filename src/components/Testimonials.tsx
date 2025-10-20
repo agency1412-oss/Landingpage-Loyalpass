@@ -142,7 +142,7 @@ const Testimonials: React.FC = () => {
                     >
                       {testimonial.text.split('\n').map((paragraph, pIndex) => (
                         paragraph.trim() && (
-                          <p key={pIndex} className="mb-3 last:mb-0">
+                          <p key={pIndex} className="mb-3 last:mb-0 text-justify">
                             {paragraph}
                           </p>
                         )

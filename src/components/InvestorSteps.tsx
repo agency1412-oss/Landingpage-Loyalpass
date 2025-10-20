@@ -126,7 +126,7 @@ const InvestorSteps: React.FC = () => {
                         {stepItem.timeline}
                       </span>
                     </div>
-                    <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed break-words">{stepItem.description}</p>
+                    <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed break-words text-justify">{stepItem.description}</p>
                   </div>
 
                   <div className="text-green-600 hidden sm:block flex-shrink-0">

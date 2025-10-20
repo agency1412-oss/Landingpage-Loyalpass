@@ -29,7 +29,7 @@ const ContactForm: React.FC = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             Liên hệ tư vấn
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed text-justify">
             Liên hệ cho chúng tôi nếu bạn muốn tìm hiểu thêm về những dịch vụ chúng tôi cung cấp hoặc nếu bạn đã sẵn sàng bắt đầu ngay!
           </p>
         </div>
@@ -101,7 +101,7 @@ const ContactForm: React.FC = () => {
                     required
                     className="mt-1 mr-3 text-blue-600 focus:ring-blue-500"
                   />
-                  <span className="text-gray-700">
+                  <span className="text-gray-700 text-justify">
                     Tôi biết chương trình EB-5 yêu cầu khoản đầu tư 800.000 đô la và tôi muốn tìm hiểu thêm.
                   </span>
                 </label>
@@ -116,7 +116,7 @@ const ContactForm: React.FC = () => {
                     required
                     className="mt-1 mr-3 text-blue-600 focus:ring-blue-500"
                   />
-                  <span className="text-gray-700">
+                  <span className="text-gray-700 text-justify">
                     Tôi biết chương trình EB-5 và đang tìm kiếm dự án phù hợp.
                   </span>
                 </label>
@@ -131,7 +131,7 @@ const ContactForm: React.FC = () => {
                     required
                     className="mt-1 mr-3 text-blue-600 focus:ring-blue-500"
                   />
-                  <span className="text-gray-700">
+                  <span className="text-gray-700 text-justify">
                     Tôi cần tư vấn các vấn đề liên quan tới EB-5.
                   </span>
                 </label>
