@@ -87,7 +87,7 @@ const HowWePrepare: React.FC = () => {
               </div>
 
               <div className="flex-1 flex flex-col">
-                <p className="text-gray-600 mb-6 leading-relaxed text-base">{prep.description}</p>
+                <p className="text-gray-600 mb-6 leading-relaxed text-base text-justify">{prep.description}</p>
 
                 <div className="mt-auto space-y-3.5 pt-4 border-t border-gray-100">
                   {prep.features.map((feature, featureIndex) => (
@@ -96,7 +96,7 @@ const HowWePrepare: React.FC = () => {
                       className="flex items-start text-gray-700 group/item hover:translate-x-1 transition-transform duration-300"
                     >
                       <CheckCircle2 className="h-4 w-4 text-green-500 mr-3 mt-1 flex-shrink-0 group-hover/item:text-green-600 group-hover/item:scale-125 transition-all duration-300" />
-                      <span className="text-sm leading-relaxed">{feature}</span>
+                      <span className="text-sm leading-relaxed text-justify">{feature}</span>
                     </div>
                   ))}
                 </div>
