@@ -39,13 +39,9 @@ const Hero: React.FC = () => {
               Nộp hồ sơ để được bảo vệ quyền lợi toàn diện trước: 30 tháng 9, 2026
             </div>
             
-            <h1 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold text-black leading-normal lg:leading-relaxed tracking-wide transition-all duration-700 ${
-    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
-  }`}
-  style={{ transitionDelay: '200ms' }}
->
-  Xây dựng<span className="text-blue-700"> TƯƠNG LAI</span><br />
-  vững chắc tại<span className="text-blue-700"> HOA KỲ</span>
+            <h1 className={`text-5xl lg:text-5xl font-bold text-black mb-6 leading-tight tracking-wider transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`} style={{ transitionDelay: '200ms' }}>
+              Xây dựng<span className="text-blue-600"> TƯƠNG LAI</span><br />
+              vững chắc tại<span className="text-blue-600"> HOA KỲ</span>
             </h1>
             
             <p className={`text-xl text-white mb-8 leading-relaxed bg-blue-600 p-6 rounded-2xl transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'}`} style={{ transitionDelay: '300ms' }}>
