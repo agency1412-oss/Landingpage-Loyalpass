@@ -189,7 +189,7 @@ const Testimonials: React.FC = () => {
                 "Hơn 500 gia đình đã tin tưởng chúng tôi trong hành trình EB-5. Hãy để chúng tôi giúp bạn trở thành câu chuyện thành công tiếp theo.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
+                <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
                   Đọc thêm các câu chuyện thành công
                 </button>
                 <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
