@@ -150,7 +150,13 @@ const InvestorSteps: React.FC = () => {
             <p className="text-sm sm:text-base lg:text-lg opacity-90 mb-5 sm:mb-6 leading-relaxed">
               Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
             </p>
-            <button className="bg-white text-blue-600 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold text-sm sm:text-base">
+            <button
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                contactSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-white text-blue-600 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold text-sm sm:text-base"
+            >
               Bắt đầu Lộ trình của bạn ngay hôm nay
             </button>
           </div>
