@@ -91,18 +91,18 @@ const InvestorSteps: React.FC = () => {
   }, []);
 
   return (
-    <section id="process" className="py-20 bg-gray-50">
+    <section id="process" className="py-12 sm:py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight">
             Quy trình thực hiện hồ sơ EB-5
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Quy trình đã được chứng minh của chúng tôi đảm bảo mọi chi tiết đều được xử lý đúng cách, từ tư vấn ban đầu đến khi thẻ xanh vĩnh viễn được chấp thuận.
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {steps.map((stepItem, index) => (
             <div
               key={index}
@@ -113,44 +113,44 @@ const InvestorSteps: React.FC = () => {
                   : 'opacity-0 translate-y-8'
               }`}
             >
-              <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border-l-4 border-blue-600">
-                <div className="flex items-start space-x-6">
-                  <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">
+              <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border-l-4 border-blue-600">
+                <div className="flex items-start space-x-3 sm:space-x-4 lg:space-x-6">
+                  <div className="bg-blue-600 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-bold text-base sm:text-lg flex-shrink-0">
                     {stepItem.step}
                   </div>
-                  
-                  <div className="flex-1">
-                    <div className="flex items-start justify-between mb-4">
-                      <h3 className="text-2xl font-bold text-gray-900">{stepItem.title}</h3>
-                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4 gap-2">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 leading-tight pr-2">{stepItem.title}</h3>
+                      <span className="bg-blue-100 text-blue-800 px-2.5 py-1 sm:px-3 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap self-start">
                         {stepItem.timeline}
                       </span>
                     </div>
-                    <p className="text-gray-600 text-lg leading-relaxed">{stepItem.description}</p>
+                    <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed break-words">{stepItem.description}</p>
                   </div>
-                  
-                  <div className="text-green-600">
-                    <CheckCircle className="h-6 w-6" />
+
+                  <div className="text-green-600 hidden sm:block flex-shrink-0">
+                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6" />
                   </div>
                 </div>
               </div>
               
               {index < steps.length - 1 && (
-                <div className="flex justify-center my-4">
-                  <ArrowRight className="h-6 w-6 text-gray-400 transform rotate-90" />
+                <div className="flex justify-center my-3 sm:my-4">
+                  <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400 transform rotate-90" />
                 </div>
               )}
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
-            <h3 className="text-2xl font-bold mb-4">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
-            <p className="text-lg opacity-90 mb-6">
+        <div className="mt-8 sm:mt-12 text-center">
+          <div className="bg-blue-600 text-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+            <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 leading-tight">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
+            <p className="text-sm sm:text-base lg:text-lg opacity-90 mb-5 sm:mb-6 leading-relaxed">
               Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold">
+            <button className="bg-white text-blue-600 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold text-sm sm:text-base">
               Bắt đầu Lộ trình của bạn ngay hôm nay
             </button>
           </div>
