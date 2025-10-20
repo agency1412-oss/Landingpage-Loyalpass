@@ -1,8 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Star, Quote } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
   const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
 
   const toggleExpand = (index: number) => {
     setExpandedCards((prev) => {
@@ -55,9 +80,9 @@ const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-white">
+    <section ref={sectionRef} id="testimonials" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className={`text-center mb-16 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
             Khách hàng nói về chúng tôi
           </h2>
@@ -72,26 +97,34 @@ const Testimonials: React.FC = () => {
             const isLongText = testimonial.text.length > 200;
 
             return (
-              <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+              <div
+                key={index}
+                className={`bg-white border border-gray-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-2xl hover:scale-[1.02] transition-all duration-500 ease-out group cursor-pointer ${
+                  isVisible ? `animate-on-scroll animate-delay-${(index % 2) * 100}` : 'opacity-0'
+                }`}
+                style={{
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)'
+                }}
+              >
                 <div className="flex items-start space-x-4 mb-6">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover"
+                    className="w-16 h-16 rounded-full object-cover ring-4 ring-blue-100 group-hover:ring-blue-300 transition-all duration-300 group-hover:scale-110"
                   />
                   <div className="flex-1">
-                    <h4 className="text-lg font-bold text-gray-900">{testimonial.name}</h4>
+                    <h4 className="text-lg font-bold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">{testimonial.name}</h4>
                     <p className="text-gray-600 text-sm mb-2">{testimonial.location}</p>
                     <div className="flex items-center space-x-1">
                       {[...Array(testimonial.rating)].map((_, starIndex) => (
-                        <Star key={starIndex} className="h-4 w-4 text-yellow-400 fill-current" />
+                        <Star key={starIndex} className="h-4 w-4 text-yellow-400 fill-current group-hover:scale-110 transition-transform duration-300" style={{ transitionDelay: `${starIndex * 50}ms` }} />
                       ))}
                     </div>
                   </div>
                 </div>
 
                 <div className="relative">
-                  <Quote className="h-8 w-8 text-blue-200 absolute -top-2 -left-2" />
+                  <Quote className="h-8 w-8 text-blue-200 absolute -top-2 -left-2 group-hover:text-blue-300 group-hover:scale-110 transition-all duration-300" />
                   <div
                     className="cursor-pointer"
                     onClick={() => isLongText && toggleExpand(index)}
@@ -111,7 +144,7 @@ const Testimonials: React.FC = () => {
                     </p>
                     {isLongText && (
                       <button
-                        className="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors pl-6"
+                        className="text-blue-600 text-sm font-semibold hover:text-blue-700 hover:gap-1 transition-all pl-6 inline-flex items-center gap-0"
                         onClick={(e) => {
                           e.stopPropagation();
                           toggleExpand(index);
@@ -123,26 +156,28 @@ const Testimonials: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between text-sm text-gray-500 border-t pt-4 mt-4">
-                  <span>{testimonial.project}</span>
-                  <span>Approved {testimonial.year}</span>
+                <div className="flex items-center justify-between text-sm text-gray-500 border-t border-gray-200 group-hover:border-blue-200 pt-4 mt-4 transition-colors duration-300">
+                  <span className="font-medium">{testimonial.project}</span>
+                  <span className="font-medium">Approved {testimonial.year}</span>
                 </div>
               </div>
             );
           })}
         </div>
 
-        <div className="mt-16 text-center">
-          <div className="bg-blue-600 rounded-xl p-8 text-white">
+        <div className={`mt-16 text-center ${
+          isVisible ? 'animate-on-scroll animate-delay-300' : 'opacity-0'
+        }`}>
+          <div className="bg-blue-600 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-500">
             <h3 className="text-3xl font-bold mb-4">Hãy trở thành câu chuyện thành công tiếp theo của chúng tôi</h3>
             <p className="text-xl opacity-90 mb-6 max-w-2xl mx-auto">
               "Hơn 500 gia đình đã tin tưởng chúng tôi trong hành trình EB-5. Hãy để chúng tôi giúp bạn trở thành câu chuyện thành công tiếp theo.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold">
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
                 Đọc thêm các câu chuyện thành công
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 transition-colors font-semibold">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
                 Đặt lịch tư vấn ngay hôm nay
               </button>
             </div>
