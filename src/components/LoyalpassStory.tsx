@@ -82,21 +82,24 @@ const LoyalpassStory: React.FC = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             {values.map((value, index) => (
               <div
                 key={index}
-                className={`bg-white rounded-lg p-6 shadow-sm hover:shadow-xl hover:-translate-x-2 transition-all duration-300 group ${
+                className={`bg-white border border-gray-200 rounded-2xl p-6 hover:border-blue-300 hover:shadow-2xl hover:scale-[1.02] hover:-translate-x-2 transition-all duration-500 ease-out group cursor-pointer ${
                   isVisible ? `animate-on-scroll animate-delay-${Math.min(index, 3)}00` : 'opacity-0'
                 }`}
+                style={{
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)'
+                }}
               >
                 <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 rounded-lg p-2 group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
-                    <value.icon className="h-5 w-5 text-blue-600 group-hover:text-white transition-colors duration-300" />
+                  <div className="bg-blue-100 rounded-xl p-3 group-hover:bg-blue-600 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 flex-shrink-0 shadow-sm">
+                    <value.icon className="h-6 w-6 text-blue-600 group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">{value.title}</h4>
-                    <p className="text-gray-600 text-sm">{value.description}</p>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg group-hover:text-blue-700 transition-colors duration-300">{value.title}</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
                   </div>
                 </div>
               </div>
