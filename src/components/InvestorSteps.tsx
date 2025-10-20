@@ -145,7 +145,7 @@ const InvestorSteps: React.FC = () => {
         </div>
 
         <div className="mt-8 sm:mt-12 text-center">
-          <div className="bg-blue-600 text-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+          <div className="animated-gradient-bg text-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
             <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 leading-tight">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
             <p className="text-sm sm:text-base lg:text-lg opacity-90 mb-5 sm:mb-6 leading-relaxed">
               Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
