@@ -174,18 +174,28 @@ const Testimonials: React.FC = () => {
         <div className={`mt-16 text-center ${
           isVisible ? 'animate-on-scroll animate-delay-300' : 'opacity-0'
         }`}>
-          <div className="bg-blue-600 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-500">
-            <h3 className="text-3xl font-bold mb-4">Hãy trở thành câu chuyện thành công tiếp theo của chúng tôi</h3>
-            <p className="text-xl opacity-90 mb-6 max-w-2xl mx-auto">
-              "Hơn 500 gia đình đã tin tưởng chúng tôi trong hành trình EB-5. Hãy để chúng tôi giúp bạn trở thành câu chuyện thành công tiếp theo.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
-                Đọc thêm các câu chuyện thành công
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
-                Đặt lịch tư vấn ngay hôm nay
-              </button>
+          <div className="relative bg-blue-600 rounded-2xl p-8 text-white shadow-xl hover:shadow-2xl hover:scale-[1.01] transition-all duration-500 overflow-hidden">
+            <div className="absolute inset-0 z-0">
+              <img
+                src="/img3.jpg"
+                alt="Background"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gray-900 opacity-70"></div>
+            </div>
+            <div className="relative z-10">
+              <h3 className="text-3xl font-bold mb-4">Hãy trở thành câu chuyện thành công tiếp theo của chúng tôi</h3>
+              <p className="text-xl opacity-90 mb-6 max-w-2xl mx-auto">
+                "Hơn 500 gia đình đã tin tưởng chúng tôi trong hành trình EB-5. Hãy để chúng tôi giúp bạn trở thành câu chuyện thành công tiếp theo.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
+                  Đọc thêm các câu chuyện thành công
+                </button>
+                <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
+                  Đặt lịch tư vấn ngay hôm nay
+                </button>
+              </div>
             </div>
           </div>
         </div>
