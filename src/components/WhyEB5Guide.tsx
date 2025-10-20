@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Shield, MapPin, TrendingUp, AlertTriangle } from 'lucide-react';
+import { Shield, MapPin, TrendingUp } from 'lucide-react';
 
 const WhyEB5Guide: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -92,7 +92,6 @@ const WhyEB5Guide: React.FC = () => {
           style={{ transitionDelay: '450ms' }}
         >
           <div className="flex">
-            <AlertTriangle className="h-6 w-6 text-yellow-400 mr-3 mt-1 flex-shrink-0" />
             <div>
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Bạn đã sẵn sàng cho EB-5 vào 2026?</h4>
               <p className="text-gray-700 mb-4">
