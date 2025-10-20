@@ -164,7 +164,7 @@ const InvestorSteps: React.FC = () => {
                   const contactSection = document.getElementById('contact');
                   contactSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="bg-white text-blue-600 px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold text-sm sm:text-base"
+                className="bg-blue-600 text-white px-6 py-2.5 sm:px-8 sm:py-3 rounded-full hover:bg-blue-700 transition-colors font-semibold text-sm sm:text-base"
               >
                 Bắt đầu Lộ trình của bạn ngay hôm nay
               </button>
