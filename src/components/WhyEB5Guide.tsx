@@ -34,35 +34,21 @@ const WhyEB5Guide: React.FC = () => {
           <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
             <MapPin className="h-12 w-12 text-green-600 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Already in the U.S.? EB-5 Still Works for You
+              USCIS thường xuyên thay đổi chính sách xét duyệt
             </h3>
             <p className="text-gray-600 mb-6">
-              Many assume EB-5 is only for those outside the U.S., but it's an excellent 
-              path for current visa holders seeking permanent status without employer dependency.
+              USCIS phê duyệt đơn I-526E và I-829 theo những tiêu chuẩn nhất định, cơ quan này vẫn thường xuyên thay đổi chính sách phê duyệt liên quan tới nguồn tiền, chuyển tiền và việc sử dụng tiền EB-5 trong dự án. Làm việc với các hãng luật hàng đầu, thường xuyên hỗ trợ cộng đồng EB-5 Việt Nam, cho phép chúng tôi nắm bắt nhanh chóng xu hướng xét duyệt từ USCIS, giúp có những tư vấn phù hợp nhất cho khách hàng.
             </p>
-            <ul className="space-y-2 text-gray-700">
-              <li>• Adjustment of status available</li>
-              <li>• No employer sponsorship required</li>
-              <li>• Freedom to change jobs immediately</li>
-              <li>• Family benefits included</li>
-            </ul>
           </div>
 
           <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8">
             <AlertTriangle className="h-12 w-12 text-red-600 mb-6" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Why Most People Miss: EB-5 Comes with Risks
+              Am hiểu tình hình di trú giúp bạn chuẩn bị tốt cho kế hoạch nhập cư
             </h3>
             <p className="text-gray-600 mb-6">
-              Without proper guidance, investors face significant risks including investment 
-              loss, application denial, and missed deadlines that can derail their immigration plans.
+              Nắm bắt được các tác động của chính sách nhập cư tới quá trình xử lý hồ sơ, giúp bạn có được kế hoạch chuẩn bị tốt nhất cho việc nhập cư. Cùng kinh nghiệm nhiều năm, trải qua nhiều biến động của chính sách nhập cư và chương trình EB-5, Loyalpass hỗ trợ các khách hàng có sự chuẩn bị và lộ trình nhập cư một cách chính xác, hiệu quả và bình tâm.
             </p>
-            <ul className="space-y-2 text-gray-700">
-              <li>• Investment capital at risk</li>
-              <li>• Complex legal requirements</li>
-              <li>• Strict documentation standards</li>
-              <li>• Timing-sensitive deadlines</li>
-            </ul>
           </div>
         </div>
 
