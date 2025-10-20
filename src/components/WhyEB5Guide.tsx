@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { ShieldAlert, MapPin, TrendingUp, AlertTriangle } from 'lucide-react';
+import { Shield, MapPin, TrendingUp, AlertTriangle } from 'lucide-react';
 
 const WhyEB5Guide: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +75,7 @@ const WhyEB5Guide: React.FC = () => {
             }`}
             style={{ transitionDelay: '300ms' }}
           >
-            <ShieldAlert className="h-12 w-12 text-red-600 mb-6 transition-transform duration-300 hover:scale-110" />
+            <Shield className="h-12 w-12 text-red-600 mb-6 transition-transform duration-300 hover:scale-110" />
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
               Am hiểu tình hình di trú giúp bạn chuẩn bị tốt cho kế hoạch nhập cư
             </h3>
