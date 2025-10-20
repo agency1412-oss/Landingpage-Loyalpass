@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 
 const InvestorSteps: React.FC = () => {
+  const [visibleSteps, setVisibleSteps] = useState<boolean[]>([]);
+  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+
   const steps = [
     {
       step: "01",
@@ -53,6 +56,40 @@ const InvestorSteps: React.FC = () => {
     }
   ];
 
+  useEffect(() => {
+    const observers = stepRefs.current.map((ref, index) => {
+      if (!ref) return null;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                setVisibleSteps((prev) => {
+                  const newVisible = [...prev];
+                  newVisible[index] = true;
+                  return newVisible;
+                });
+              }, index * 100);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(ref);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer, index) => {
+        if (observer && stepRefs.current[index]) {
+          observer.unobserve(stepRefs.current[index]!);
+        }
+      });
+    };
+  }, []);
+
   return (
     <section id="process" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,8 +104,16 @@ const InvestorSteps: React.FC = () => {
 
         <div className="space-y-6">
           {steps.map((stepItem, index) => (
-            <div key={index} className="relative">
-              <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow border-l-4 border-blue-600">
+            <div
+              key={index}
+              ref={(el) => (stepRefs.current[index] = el)}
+              className={`relative transform transition-all duration-700 ${
+                visibleSteps[index]
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-8'
+              }`}
+            >
+              <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 border-l-4 border-blue-600">
                 <div className="flex items-start space-x-6">
                   <div className="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg">
                     {stepItem.step}
@@ -100,7 +145,7 @@ const InvestorSteps: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <div className="bg-blue-600 text-white p-8 rounded-xl">
+          <div className="bg-blue-600 text-white p-8 rounded-2xl shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
             <h3 className="text-2xl font-bold mb-4">Tổng thời gian: 6-24 tháng để có thẻ xanh</h3>
             <p className="text-lg opacity-90 mb-6">
               Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
