@@ -192,7 +192,7 @@ const Testimonials: React.FC = () => {
                 <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
                   Đọc thêm các câu chuyện thành công
                 </button>
-                <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
+                <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-blue-600 hover:text-white hover:scale-105 hover:shadow-lg transition-all duration-300 font-semibold">
                   Đặt lịch tư vấn ngay hôm nay
                 </button>
               </div>
