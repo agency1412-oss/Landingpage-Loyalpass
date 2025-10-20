@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
               Nộp hồ sơ để được bảo vệ quyền lợi toàn diện trước: 30 tháng 9, 2026
             </div>
             
-            <h1 className="text-6xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Xây dựng tương lai vững chắc
               <span className="text-blue-400"> tại Hoa Kỳ</span>
             </h1>
