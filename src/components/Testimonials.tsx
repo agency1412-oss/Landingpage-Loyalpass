@@ -55,7 +55,7 @@ const Testimonials: React.FC = () => {
       location: "Chấp thuận I-526E ngày 21/01/2025",
       image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
-      text: "Là khách hàng của Cty Loyalpass gia đình chúng tôi  gồm năm thành viên từ tháng 02/2024 được sự hướng dẫn của quí Công ty Loyalpass , chúng tôi đã hoàn tất việc nộp hồ sơ và đến 20/01/2025 chúng tôi nhận được thư chấp thuận của USCIS . Thật sự đó là một thành công và tin vui cho sự hợp tác thật hiệu quả của Quí Công ty.",
+      text: "Là khách hàng của Cty Loyalpass gia đình chúng tôi  gồm năm thành viên từ tháng 02/2024 được sự hướng dẫn của quí Công ty Loyalpass , chúng tôi đã hoàn tất việc nộp hồ sơ và đến 20/01/2025 chúng tôi nhận được thư chấp thuận của USCIS . Thật sự đó là một thành công và tin vui cho sự hợp tác thật hiệu quả của Quí Công ty. \nQua quá trình làm việc, được sự đồng hành và hỗ trợ rất nhiệt tình , tích cực và chuyên nghiệp của đội ngũ anh chị em  Loyalpass gia đình chúng tôi thật sự yên tâm và hạnh phúc vì đã đạt được kết quả đến hôm nay. Mong rằng trong thời gian tới Cty Loyalpass không ngừng phát triển và thành công hơn nữa để giúp đỡ các nhà đầu tư Việt Nam có điều kiện định cư tại Mỹ.",
       project: "TEA Investment",
       year: "2022"
     },
