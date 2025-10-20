@@ -70,26 +70,32 @@ const HowWePrepare: React.FC = () => {
           {preparations.map((prep, index) => (
             <div
               key={index}
-              className={`bg-gray-50 rounded-xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group flex flex-col h-full ${
+              className={`bg-white rounded-2xl p-8 border border-gray-200 hover:border-blue-300 hover:shadow-2xl hover:scale-[1.02] hover:-translate-y-1 transition-all duration-500 ease-out group flex flex-col h-full cursor-pointer ${
                 isVisible ? `animate-on-scroll animate-delay-${Math.min(index, 3)}00` : 'opacity-0'
               }`}
+              style={{
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)'
+              }}
             >
-              <div className="flex items-start space-x-6 mb-6">
-                <div className="bg-blue-600 rounded-lg p-3 group-hover:bg-blue-700 group-hover:scale-110 transition-all duration-300 flex-shrink-0">
-                  <prep.icon className="h-6 w-6 text-white" />
+              <div className="flex items-start space-x-5 mb-6">
+                <div className="bg-blue-600 rounded-xl p-3.5 group-hover:bg-blue-700 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 flex-shrink-0 shadow-md">
+                  <prep.icon className="h-7 w-7 text-white" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight">{prep.title}</h3>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2 leading-tight group-hover:text-blue-700 transition-colors duration-300">{prep.title}</h3>
                 </div>
               </div>
 
               <div className="flex-1 flex flex-col">
-                <p className="text-gray-600 mb-6 leading-relaxed">{prep.description}</p>
+                <p className="text-gray-600 mb-6 leading-relaxed text-base">{prep.description}</p>
 
-                <div className="mt-auto space-y-3">
+                <div className="mt-auto space-y-3.5 pt-4 border-t border-gray-100">
                   {prep.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-start text-gray-700 group/item">
-                      <CheckCircle2 className="h-4 w-4 text-green-600 mr-3 mt-1 flex-shrink-0 group-hover/item:scale-110 transition-transform" />
+                    <div
+                      key={featureIndex}
+                      className="flex items-start text-gray-700 group/item hover:translate-x-1 transition-transform duration-300"
+                    >
+                      <CheckCircle2 className="h-4 w-4 text-green-500 mr-3 mt-1 flex-shrink-0 group-hover/item:text-green-600 group-hover/item:scale-125 transition-all duration-300" />
                       <span className="text-sm leading-relaxed">{feature}</span>
                     </div>
                   ))}
