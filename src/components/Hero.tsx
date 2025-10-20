@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg flex items-center justify-center">
+              <button className="bg-blue-600 text-white px-8 py-4 rounded-full hover:bg-blue-700 transition-colors font-semibold text-lg flex items-center justify-center">
                 Bắt đầu hành trình EB-5 của bạn
                 <ArrowRight className="h-5 w-5 ml-2" />
               </button>

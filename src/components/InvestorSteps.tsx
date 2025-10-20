@@ -105,7 +105,7 @@ const InvestorSteps: React.FC = () => {
             <p className="text-lg opacity-90 mb-6">
               Với sự chuẩn bị đúng đắn và hướng dẫn chuyên môn, hầu hết khách hàng của chúng tôi đạt được thẻ xanh trong vòng 6 đến 24 tháng.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold">
+            <button className="bg-white text-blue-600 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-semibold">
               Bắt đầu Lộ trình của bạn ngay hôm nay
             </button>
           </div>
