@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Star, Quote } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
+
+  const toggleExpand = (index: number) => {
+    setExpandedCards((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
   const testimonials = [
     {
       name: "Chị Trần N.T.N.",
@@ -54,38 +67,69 @@ const Testimonials: React.FC = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
-              <div className="flex items-start space-x-4 mb-6">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <div className="flex-1">
-                  <h4 className="text-lg font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-gray-600 text-sm mb-2">{testimonial.location}</p>
-                  <div className="flex items-center space-x-1">
-                    {[...Array(testimonial.rating)].map((_, starIndex) => (
-                      <Star key={starIndex} className="h-4 w-4 text-yellow-400 fill-current" />
-                    ))}
+          {testimonials.map((testimonial, index) => {
+            const isExpanded = expandedCards.has(index);
+            const isLongText = testimonial.text.length > 200;
+
+            return (
+              <div key={index} className="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start space-x-4 mb-6">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover"
+                  />
+                  <div className="flex-1">
+                    <h4 className="text-lg font-bold text-gray-900">{testimonial.name}</h4>
+                    <p className="text-gray-600 text-sm mb-2">{testimonial.location}</p>
+                    <div className="flex items-center space-x-1">
+                      {[...Array(testimonial.rating)].map((_, starIndex) => (
+                        <Star key={starIndex} className="h-4 w-4 text-yellow-400 fill-current" />
+                      ))}
+                    </div>
                   </div>
                 </div>
+
+                <div className="relative">
+                  <Quote className="h-8 w-8 text-blue-200 absolute -top-2 -left-2" />
+                  <div
+                    className="cursor-pointer"
+                    onClick={() => isLongText && toggleExpand(index)}
+                  >
+                    <p
+                      className={`text-gray-700 leading-relaxed mb-2 pl-6 transition-all duration-300 ${
+                        !isExpanded && isLongText ? 'line-clamp-3' : ''
+                      }`}
+                      style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: !isExpanded && isLongText ? 3 : 'unset',
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden'
+                      }}
+                    >
+                      {testimonial.text}
+                    </p>
+                    {isLongText && (
+                      <button
+                        className="text-blue-600 text-sm font-semibold hover:text-blue-700 transition-colors pl-6"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleExpand(index);
+                        }}
+                      >
+                        {isExpanded ? 'Thu gọn' : 'Xem thêm...'}
+                      </button>
+                    )}
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between text-sm text-gray-500 border-t pt-4 mt-4">
+                  <span>{testimonial.project}</span>
+                  <span>Approved {testimonial.year}</span>
+                </div>
               </div>
-              
-              <div className="relative">
-                <Quote className="h-8 w-8 text-blue-200 absolute -top-2 -left-2" />
-                <p className="text-gray-700 leading-relaxed mb-6 pl-6">
-                  {testimonial.text}
-                </p>
-              </div>
-              
-              <div className="flex items-center justify-between text-sm text-gray-500 border-t pt-4">
-                <span>{testimonial.project}</span>
-                <span>Approved {testimonial.year}</span>
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-16 text-center">
