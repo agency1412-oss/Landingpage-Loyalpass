@@ -23,12 +23,6 @@ const WhyEB5Guide: React.FC = () => {
             <p className="text-gray-600 mb-6">
               USCIS yêu cầu khoản đầu tư của bạn cần chịu sự rủi ro, việc đánh giá các rủi ro tiềm ẩn và các biện pháp giảm thiểu rủi ro giúp khoản đầu tư của bạn được an toàn. Đồng hành cùng hơn 500 nhà đầu tư EB-5 Việt Nam, chúng tôi có bộ tiêu chuẩn đánh giá một dự án EB-5 an toàn, giúp bảo vệ vốn đầu tư của bạn.
             </p>
-            <ul className="space-y-2 text-gray-700">
-              <li>• Financial analysis & risk assessment</li>
-              <li>• Job creation verification</li>
-              <li>• Developer track record review</li>
-              <li>• Legal compliance evaluation</li>
-            </ul>
           </div>
 
           <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
