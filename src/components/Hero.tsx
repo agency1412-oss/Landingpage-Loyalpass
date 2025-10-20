@@ -4,7 +4,7 @@ import { ArrowRight, Clock, Shield, Award } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <section className="relative bg-cover bg-center bg-no-repeat pt-24 pb-16" style={{ backgroundImage: "url('/banner-web-eb5-1.webp')" }}>
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/10"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
