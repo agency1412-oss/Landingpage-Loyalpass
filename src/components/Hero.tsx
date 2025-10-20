@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             
             <h1 className="text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
               Xây dựng tương lai vững chắc
-              <span className="text-blue-400"> tại Hoa Kỳ</span>
+              <span className="text-blue-600"> tại Hoa Kỳ</span>
             </h1>
             
             <p className="text-xl text-white mb-8 leading-relaxed bg-gray-400/50 p-4 rounded-lg">
