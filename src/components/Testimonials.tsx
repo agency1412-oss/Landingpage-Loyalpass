@@ -76,6 +76,15 @@ const Testimonials: React.FC = () => {
       text: "Kính gửi anh chị trong team Loyalpass\n\nEm xin gửi lời cảm ơn đến team Loyalpass đã đồng hành, hỗ trợ và luôn sát cánh cùng em và gia đình trong suốt hành trình làm hồ sơ EB-5.\n\nLà một du học sinh đang học tại Mỹ, ban đầu em và ba mẹ cũng khá lo lắng, bỡ ngỡ vì không biết bắt đầu từ đâu. Nhưng nhờ sự hướng dẫn tận tình, rõ ràng và rất chuyên nghiệp từ Loyalpass mọi thứ trở nên nhẹ nhàng và suôn sẻ hơn rất nhiều. Đặc biệt, việc nhận được thẻ xanh có điều kiện (2 năm) chỉ sau 6 tháng thật sự là một kết quả ngoài mong đợi đối với cả gia đình em.\n\nTrong suốt quá trình đó, em luôn cảm nhận được sự tận tâm, nhanh chóng và uy tín từ phía công ty – từ việc chuẩn bị giấy tờ, tư vấn đầu tư, đến những lúc giải đáp từng thắc mắc nhỏ của em và ba mẹ. Sự đồng hành của Loylpass không chỉ giúp em đạt được kết quả như mong muốn, mà còn mang lại cảm giác yên tâm và tin tưởng tuyệt đối cho gia đình em.\n\nHy vọng Loyalpass sẽ tiếp tục đồng hành cùng em và ba mẹ cho đến khi em nhận được thẻ xanh vĩnh viễn và hoàn tất việc nhận lại khoản đầu tư. Một lần nữa, em xin cảm ơn công ty đã luôn là chỗ dựa vững chắc trong hành trình quan trọng này của em.",
       project: "Rural TEA Project",
       year: "2023"
+    },
+    {
+      name: "Gia đình Benz Nancy Kevin and Annie",
+      location: "Texas – Hoa Kỳ",
+      image: "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      rating: 5,
+      text: "Từ những ngày đầu tiên làm việc, Loyalpass đã mang đến cho gia đình chúng tôi những ấn tượng và ký ức thật đẹp — từ cách tư vấn rõ ràng, trung thực và chi tiết, đến sự tận tâm của đội ngũ trong từng bước chuẩn bị hồ sơ, giải thích quy trình và hỗ trợ thủ tục. Chúng tôi đặc biệt cảm kích vì thời gian xử lý hồ sơ nhanh chóng và minh bạch, cùng sự đồng hành sát sao trong suốt quá trình thực hiện chương trình đầu tư EB-5 theo đạo luật mới. Loyalpass đã giúp mọi bước đi trở nên nhẹ nhàng và an tâm — đúng nghĩa là \"người bạn đồng hành đáng tin cậy\" trên hành trình đến nước Mỹ.\n\nGiờ đây, gia đình chúng tôi đã ổn định cuộc sống tại Hoa Kỳ, trong một môi trường tuyệt vời về khí hậu, giáo dục và cơ hội phát triển cho con cái. Chúng tôi đã có rất nhiều chuyến đi đáng nhớ — từ những kỳ nghỉ hè, Spring Break, đến các hành trình khám phá từ bờ Đông sang bờ Tây, qua những thành phố như Boston, New York, Washington D.C. San Francisco, Los Angeles, Houston, Dallas, Austin... và nhiều nơi khác. Mỗi chuyến đi là một trang ký ức hạnh phúc, là minh chứng cho thành quả mà Loyalpass đã giúp chúng tôi đạt được – một giấc mơ Mỹ trọn vẹn và thật sự.",
+      project: "EB-5 Investment",
+      year: "2024"
     }
   ];
 
