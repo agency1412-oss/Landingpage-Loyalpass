@@ -71,7 +71,7 @@ const Testimonials: React.FC = () => {
     {
       name: "Em Trương B.N.",
       location: "Được cấp Thẻ Xanh tháng 8/2025",
-      image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+      image: "/ava4.webp",
       rating: 5,
       text: "Kính gửi anh chị trong team Loyalpass\n\nEm xin gửi lời cảm ơn đến team Loyalpass đã đồng hành, hỗ trợ và luôn sát cánh cùng em và gia đình trong suốt hành trình làm hồ sơ EB-5.\n\nLà một du học sinh đang học tại Mỹ, ban đầu em và ba mẹ cũng khá lo lắng, bỡ ngỡ vì không biết bắt đầu từ đâu. Nhưng nhờ sự hướng dẫn tận tình, rõ ràng và rất chuyên nghiệp từ Loyalpass mọi thứ trở nên nhẹ nhàng và suôn sẻ hơn rất nhiều. Đặc biệt, việc nhận được thẻ xanh có điều kiện (2 năm) chỉ sau 6 tháng thật sự là một kết quả ngoài mong đợi đối với cả gia đình em.\n\nTrong suốt quá trình đó, em luôn cảm nhận được sự tận tâm, nhanh chóng và uy tín từ phía công ty – từ việc chuẩn bị giấy tờ, tư vấn đầu tư, đến những lúc giải đáp từng thắc mắc nhỏ của em và ba mẹ. Sự đồng hành của Loylpass không chỉ giúp em đạt được kết quả như mong muốn, mà còn mang lại cảm giác yên tâm và tin tưởng tuyệt đối cho gia đình em.\n\nHy vọng Loyalpass sẽ tiếp tục đồng hành cùng em và ba mẹ cho đến khi em nhận được thẻ xanh vĩnh viễn và hoàn tất việc nhận lại khoản đầu tư. Một lần nữa, em xin cảm ơn công ty đã luôn là chỗ dựa vững chắc trong hành trình quan trọng này của em.",
       project: "Rural TEA Project",
