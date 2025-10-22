@@ -65,7 +65,6 @@ const Testimonials: React.FC = () => {
       image: "https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
       text: "Thân gửi Team Loyalpass,\n\nLời đầu tiên, gia đình anh chị xin gửi lời cảm ơn chân thành đến đội ngũ Loyalpass đã tận tâm hỗ trợ và đồng hành cùng gia đình anh chị trong suốt quá trình làm hồ sơ EB-5 cho con. Là một người có nhiều kinh nghiệm làm việc với doanh nghiệp Hoa Kỳ và hiểu biết về di trú, nhưng anh cũng hết sức bất ngờ về kết quả của hồ sơ EB-5 của bé NGỌC, chỉ mất 6 tháng từ lúc bắt đầu mở hồ sơ cho đến khi nhận được thẻ xanh 2 năm, nhanh hơn cả mong đợi của gia đình.\n\nĐể có được kết quả tuyệt vời đó, gia đình tin rằng, nhờ sự chuyên nghiệp, nhiệt tình và minh bạch của các anh/chị trong công ty Loyalpass cũng như đối tác di trú tại Hoa Kỳ, đã kịp thời giải đáp mọi thắc mắc, từng bước thực hiện đều được hướng dẫn cẩn thận. Gia đình đã thật sự cảm thấy yên tâm tin tưởng khi làm việc với cty tư vấn Loyalpass.\n\nMột lần nữa, xin bày tỏ lời cảm ơn chân thành đến công ty. Chúc Loyalpass ngày càng phát triển và tiếp tục là người bạn đồng hành đáng tin cậy cho nhiều gia đình Việt Nam trên con đường định cư và hướng đến tương lai tốt đẹp hơn.\n\nThân mến,",
-      project: "Direct Investment",
       year: "2024"
     },
     {
@@ -74,7 +73,6 @@ const Testimonials: React.FC = () => {
       image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
       rating: 5,
       text: "Kính gửi anh chị trong team Loyalpass\n\nEm xin gửi lời cảm ơn đến team Loyalpass đã đồng hành, hỗ trợ và luôn sát cánh cùng em và gia đình trong suốt hành trình làm hồ sơ EB-5.\n\nLà một du học sinh đang học tại Mỹ, ban đầu em và ba mẹ cũng khá lo lắng, bỡ ngỡ vì không biết bắt đầu từ đâu. Nhưng nhờ sự hướng dẫn tận tình, rõ ràng và rất chuyên nghiệp từ Loyalpass mọi thứ trở nên nhẹ nhàng và suôn sẻ hơn rất nhiều. Đặc biệt, việc nhận được thẻ xanh có điều kiện (2 năm) chỉ sau 6 tháng thật sự là một kết quả ngoài mong đợi đối với cả gia đình em.\n\nTrong suốt quá trình đó, em luôn cảm nhận được sự tận tâm, nhanh chóng và uy tín từ phía công ty – từ việc chuẩn bị giấy tờ, tư vấn đầu tư, đến những lúc giải đáp từng thắc mắc nhỏ của em và ba mẹ. Sự đồng hành của Loylpass không chỉ giúp em đạt được kết quả như mong muốn, mà còn mang lại cảm giác yên tâm và tin tưởng tuyệt đối cho gia đình em.\n\nHy vọng Loyalpass sẽ tiếp tục đồng hành cùng em và ba mẹ cho đến khi em nhận được thẻ xanh vĩnh viễn và hoàn tất việc nhận lại khoản đầu tư. Một lần nữa, em xin cảm ơn công ty đã luôn là chỗ dựa vững chắc trong hành trình quan trọng này của em.",
-      project: "Rural TEA Project",
       year: "2023"
     },
     {
